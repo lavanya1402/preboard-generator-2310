@@ -10,16 +10,12 @@ Usage:
     .venv\\Scripts\\python.exe generate_preboard.py --save out.txt
 """
 import argparse
-import json
 import random
 from pathlib import Path
 
-DATA = Path(__file__).resolve().parent / "data"
+import storage
+
 MAX_ATTEMPTS = 4000
-
-
-def load_json(name):
-    return json.loads((DATA / name).read_text(encoding="utf-8"))
 
 
 def assemble_paper(questions, blueprint, seed=None):
@@ -113,8 +109,8 @@ def main():
     parser.add_argument("--save", help="also save paper + answer key to this text file")
     args = parser.parse_args()
 
-    blueprint = load_json("paper_blueprint.json")
-    paper = assemble_paper(load_json("question_bank.json"), blueprint, args.seed)
+    blueprint = storage.get_blueprint()
+    paper = assemble_paper(storage.list_questions(status="approved"), blueprint, args.seed)
     paper_text, key_text = render_text(paper, blueprint)
     summary = (f"\n--- {len(paper['questions'])} questions, {paper['total_marks']} marks | "
                f"chapter marks {paper['chapter_marks']} | difficulty {paper['difficulty']} ---")
