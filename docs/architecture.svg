@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1300 780" width="1300" height="780" role="img" aria-labelledby="title desc">
+<title id="title">Preboard Generator architecture</title>
+<desc id="desc">Official CBSE sources feed agents run by Claude Code, which save questions through the cbse-paper-mcp server into storage. The teacher approves, edits or rejects each question; only approved questions reach the Streamlit app, which produces the question paper, answer key and analysis.</desc>
+<style>
+  .bg { fill: #f5f7f6; }
+  .t { fill: #1b2a4a; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .muted { fill: #5b6b85; }
+  .ink-text { fill: #1f4fd1; } .pen-text { fill: #c8372d; }
+  .col { fill: #ffffff; stroke: #c9d2dc; stroke-width: 1.5; }
+  .col.mcp { fill: #e8eefc; stroke: #1f4fd1; }
+  .col.review { fill: #fbeceb; stroke: #c8372d; }
+  .item { fill: #ffffff; stroke: #c9d2dc; stroke-width: 1; }
+  .mcp-item { stroke: #9fb4ee; } .review-item { stroke: #e3a49e; }
+  .band { fill: #eef1f4; stroke: #c9d2dc; stroke-width: 1.5; }
+  .loop { fill: #fbeceb; stroke: #c8372d; stroke-width: 1.5; stroke-dasharray: 6 5; }
+  .pill-ok { fill: #dfe7fb; } .pill-wait { fill: #f6d9d6; }
+  .flow { fill: none; stroke-width: 3; stroke-dasharray: 8 6; animation: dash 0.9s linear infinite; }
+  .ink { stroke: #1f4fd1; } .pen { stroke: #c8372d; }
+  .head-ink { fill: #1f4fd1; } .head-pen { fill: #c8372d; }
+  .dot-ink { fill: #1f4fd1; } .dot-pen { fill: #c8372d; } .dot-gold { fill: #e0a100; }
+  .appear { opacity: 0; animation: rise 0.8s ease forwards; }
+  @keyframes dash { to { stroke-dashoffset: -28; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @media (prefers-color-scheme: dark) {
+    .bg { fill: #10161f; }
+    .t { fill: #e6ecf5; } .muted { fill: #9aa8bd; }
+    .ink-text { fill: #7c9dff; } .pen-text { fill: #ff7b70; }
+    .col { fill: #19212d; stroke: #34404f; }
+    .col.mcp { fill: #1c2a4d; stroke: #7c9dff; }
+    .col.review { fill: #3a1f1f; stroke: #ff7b70; }
+    .item { fill: #19212d; stroke: #34404f; }
+    .mcp-item { stroke: #4a64a8; } .review-item { stroke: #8a4540; }
+    .band { fill: #161d27; stroke: #34404f; }
+    .loop { fill: #2a1a1c; stroke: #ff7b70; }
+    .pill-ok { fill: #24345e; } .pill-wait { fill: #4a2624; }
+    .ink { stroke: #7c9dff; } .pen { stroke: #ff7b70; }
+    .head-ink, .dot-ink { fill: #7c9dff; } .head-pen, .dot-pen { fill: #ff7b70; }
+  }
+  @media (prefers-reduced-motion: reduce) { .flow, .appear { animation: none; opacity: 1; } }
+</style>
+<defs>
+<marker id="ah-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="head-ink"/></marker>
+<marker id="ah-pen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="head-pen"/></marker>
+</defs>
+<rect width="1300" height="780" class="bg"/>
+<text x="30" y="52" class="t" font-size="30" font-weight="800" text-anchor="start">Preboard Generator</text>
+<text x="30" y="84" class="t" font-size="16" font-family="system-ui, sans-serif"><tspan class="ink-text" font-weight="700">AI drafts</tspan><tspan class="muted"> the repetitive work  ·  </tspan><tspan class="pen-text" font-weight="700">the teacher decides</tspan></text>
+<text x="1270" y="52" class="t muted" font-size="14" font-weight="600" text-anchor="end">A Lavanya AI Consultancy initiative</text>
+<text x="1270" y="74" class="t muted" font-size="13" font-weight="400" text-anchor="end">making Schools AI-enabled</text>
+<g class="appear" style="animation-delay:0.10s">
+<rect x="30" y="120" width="210" height="400" rx="14" class="col "/>
+<text x="44" y="146" class="t muted" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1">1 · SOURCES</text>
+<text x="44" y="168" class="t" font-size="16" font-weight="700" text-anchor="start">Official CBSE material</text>
+<rect x="42" y="186" width="186" height="62" rx="9" class="item"/>
+<text x="54" y="212" class="t" font-size="13.5" font-weight="600" text-anchor="start">Sample Paper 2026-27</text>
+<text x="54" y="232" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">+ marking scheme (format)</text>
+<rect x="42" y="260" width="186" height="62" rx="9" class="item"/>
+<text x="54" y="286" class="t" font-size="13.5" font-weight="600" text-anchor="start">Past board papers</text>
+<text x="54" y="306" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">~10 years (topic frequency)</text>
+<rect x="42" y="334" width="186" height="62" rx="9" class="item"/>
+<text x="54" y="360" class="t" font-size="13.5" font-weight="600" text-anchor="start">Syllabus 2026-27</text>
+<text x="54" y="380" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">+ NCERT Biology chapters</text>
+</g>
+<g class="appear" style="animation-delay:0.25s">
+<rect x="286" y="120" width="210" height="400" rx="14" class="col "/>
+<text x="300" y="146" class="t muted" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1">2 · AGENTS</text>
+<text x="300" y="168" class="t" font-size="16" font-weight="700" text-anchor="start">Run by Claude Code</text>
+<rect x="298" y="186" width="186" height="62" rx="9" class="item"/>
+<text x="310" y="212" class="t" font-size="13.5" font-weight="600" text-anchor="start">Pattern Agent</text>
+<text x="310" y="232" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">marks per chapter, types</text>
+<rect x="298" y="260" width="186" height="62" rx="9" class="item"/>
+<text x="310" y="286" class="t" font-size="13.5" font-weight="600" text-anchor="start">Syllabus Agent</text>
+<text x="310" y="306" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">topics, deleted portions</text>
+<rect x="298" y="334" width="186" height="62" rx="9" class="item"/>
+<text x="310" y="360" class="t" font-size="13.5" font-weight="600" text-anchor="start">Blueprint Agent</text>
+<text x="310" y="380" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">~50% competency-based</text>
+<rect x="298" y="408" width="186" height="62" rx="9" class="item"/>
+<text x="310" y="434" class="t" font-size="13.5" font-weight="600" text-anchor="start">Question Agent</text>
+<text x="310" y="454" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">new CBSE-style questions</text>
+</g>
+<g class="appear" style="animation-delay:0.40s">
+<rect x="542" y="120" width="210" height="400" rx="14" class="col mcp"/>
+<text x="556" y="146" class="t muted" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1">3 · CBSE-PAPER-MCP</text>
+<text x="556" y="168" class="t" font-size="16" font-weight="700" text-anchor="start">MCP server + Storage</text>
+<rect x="554" y="186" width="186" height="62" rx="9" class="item mcp-item"/>
+<text x="566" y="212" class="t" font-size="13.5" font-weight="600" text-anchor="start">search · add_question</text>
+<text x="566" y="232" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">new questions = pending</text>
+<rect x="554" y="260" width="186" height="62" rx="9" class="item mcp-item"/>
+<text x="566" y="286" class="t" font-size="13.5" font-weight="600" text-anchor="start">update_status · stats</text>
+<text x="566" y="306" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">the teacher's decision</text>
+<rect x="554" y="334" width="186" height="62" rx="9" class="item mcp-item"/>
+<text x="566" y="360" class="t" font-size="13.5" font-weight="600" text-anchor="start">generate_paper</text>
+<text x="566" y="380" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">approved only, follows blueprint</text>
+<rect x="554" y="408" width="186" height="62" rx="9" class="item mcp-item"/>
+<text x="566" y="434" class="t" font-size="13.5" font-weight="600" text-anchor="start">storage.py</text>
+<text x="566" y="454" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">JSON locally · Supabase cloud</text>
+</g>
+<g class="appear" style="animation-delay:0.55s">
+<rect x="798" y="120" width="210" height="400" rx="14" class="col review"/>
+<text x="812" y="146" class="t muted" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1">4 · TEACHER REVIEW</text>
+<text x="812" y="168" class="t" font-size="16" font-weight="700" text-anchor="start">The red pen</text>
+<rect x="810" y="186" width="186" height="62" rx="9" class="item review-item"/>
+<text x="822" y="212" class="t" font-size="13.5" font-weight="600" text-anchor="start">Read each AI question</text>
+<text x="822" y="232" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">answer + step-wise marking</text>
+<rect x="810" y="260" width="186" height="62" rx="9" class="item review-item"/>
+<rect x="818" y="279" width="58" height="24" rx="12" class="pill-ok"/>
+<text x="847.1" y="296" class="t ink-text" font-size="12" font-weight="700" text-anchor="middle">Approve</text>
+<rect x="882.2" y="279" width="38" height="24" rx="12" class="pill-wait"/>
+<text x="901.4000000000001" y="296" class="t pen-text" font-size="12" font-weight="700" text-anchor="middle">Edit</text>
+<rect x="926.6" y="279" width="52" height="24" rx="12" class="pill-wait"/>
+<text x="952.4" y="296" class="t pen-text" font-size="12" font-weight="700" text-anchor="middle">Reject</text>
+<rect x="810" y="334" width="186" height="62" rx="9" class="item review-item"/>
+<text x="822" y="360" class="t" font-size="13.5" font-weight="600" text-anchor="start">Only approved questions</text>
+<text x="822" y="380" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">can ever reach a paper</text>
+</g>
+<g class="appear" style="animation-delay:0.70s">
+<rect x="1054" y="120" width="210" height="400" rx="14" class="col "/>
+<text x="1068" y="146" class="t muted" font-size="11" font-weight="700" text-anchor="start" letter-spacing="1">5 · STREAMLIT APP</text>
+<text x="1068" y="168" class="t" font-size="16" font-weight="700" text-anchor="start">Outputs</text>
+<rect x="1066" y="186" width="186" height="62" rx="9" class="item"/>
+<text x="1078" y="212" class="t" font-size="13.5" font-weight="600" text-anchor="start">Generate Paper</text>
+<text x="1078" y="232" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">16 questions · 30 marks</text>
+<rect x="1066" y="260" width="186" height="62" rx="9" class="item"/>
+<text x="1078" y="286" class="t" font-size="13.5" font-weight="600" text-anchor="start">Question Paper PDF</text>
+<text x="1078" y="306" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">with school header</text>
+<rect x="1066" y="334" width="186" height="62" rx="9" class="item"/>
+<text x="1078" y="360" class="t" font-size="13.5" font-weight="600" text-anchor="start">Answer Key PDF</text>
+<text x="1078" y="380" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">step-wise marking scheme</text>
+<rect x="1066" y="408" width="186" height="62" rx="9" class="item"/>
+<text x="1078" y="434" class="t" font-size="13.5" font-weight="600" text-anchor="start">Analysis</text>
+<text x="1078" y="454" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">chapter marks vs target</text>
+</g>
+<path id="p0" d="M244,320.0 L280,320.0" class="flow ink" marker-end="url(#ah-ink)"/>
+<circle r="4.5" class="dot-ink"><animateMotion dur="1.6s" begin="0.0s" repeatCount="indefinite"><mpath href="#p0" xlink:href="#p0"/></animateMotion></circle>
+<path id="p1" d="M500,320.0 L536,320.0" class="flow ink" marker-end="url(#ah-ink)"/>
+<circle r="4.5" class="dot-ink"><animateMotion dur="1.6s" begin="0.4s" repeatCount="indefinite"><mpath href="#p1" xlink:href="#p1"/></animateMotion></circle>
+<path id="p2" d="M756,320.0 L792,320.0" class="flow pen" marker-end="url(#ah-pen)"/>
+<circle r="4.5" class="dot-pen"><animateMotion dur="1.6s" begin="0.8s" repeatCount="indefinite"><mpath href="#p2" xlink:href="#p2"/></animateMotion></circle>
+<path id="p3" d="M1012,320.0 L1048,320.0" class="flow ink" marker-end="url(#ah-ink)"/>
+<circle r="4.5" class="dot-ink"><animateMotion dur="1.6s" begin="1.2s" repeatCount="indefinite"><mpath href="#p3" xlink:href="#p3"/></animateMotion></circle>
+<path id="loop" d="M903.0,524 C903.0,578 647.0,578 647.0,528" class="flow pen" marker-end="url(#ah-pen)"/>
+<circle r="5" class="dot-pen"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#loop" xlink:href="#loop"/></animateMotion></circle>
+<text x="775.0" y="582" class="t pen-text" font-size="12" font-weight="600" text-anchor="middle">approved → saved in storage</text>
+<path id="journey" d="M135.0,320.0 L1159.0,320.0" fill="none" stroke="none"/>
+<circle r="6" class="dot-gold" opacity="0.9"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#journey" xlink:href="#journey"/></animateMotion></circle>
+<rect x="30" y="602" width="1240" height="40" rx="12" class="loop"/>
+<circle cx="52" cy="622" r="5" class="dot-pen"><animate attributeName="r" values="4;7;4" dur="1.4s" repeatCount="indefinite"/></circle>
+<text x="68" y="627" class="t pen-text" font-size="13.5" font-weight="500" text-anchor="start">Approve / edit / reject updates each question's status in storage – the paper engine only reads approved questions.</text>
+<rect x="30" y="660" width="1240" height="84" rx="14" class="band"/>
+<text x="50" y="707" class="t" font-size="16" font-weight="700" text-anchor="start">Deploy later</text>
+<rect x="200" y="674" width="300" height="56" rx="9" class="item"/>
+<text x="216" y="698" class="t" font-size="13.5" font-weight="600" text-anchor="start">GitHub</text>
+<text x="216" y="717" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">code + animated diagram</text>
+<path id="d0" d="M506,702 L550,702" class="flow ink" marker-end="url(#ah-ink)"/>
+<circle r="4" class="dot-ink"><animateMotion dur="1.4s" begin="0.0s" repeatCount="indefinite"><mpath href="#d0" xlink:href="#d0"/></animateMotion></circle>
+<rect x="560" y="674" width="300" height="56" rx="9" class="item"/>
+<text x="576" y="698" class="t" font-size="13.5" font-weight="600" text-anchor="start">Streamlit Community Cloud</text>
+<text x="576" y="717" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">the live app</text>
+<path id="d1" d="M866,702 L910,702" class="flow ink" marker-end="url(#ah-ink)"/>
+<circle r="4" class="dot-ink"><animateMotion dur="1.4s" begin="0.5s" repeatCount="indefinite"><mpath href="#d1" xlink:href="#d1"/></animateMotion></circle>
+<rect x="920" y="674" width="300" height="56" rx="9" class="item"/>
+<text x="936" y="698" class="t" font-size="13.5" font-weight="600" text-anchor="start">Supabase</text>
+<text x="936" y="717" class="t muted" font-size="11.5" font-weight="400" text-anchor="start">data that survives restarts</text>
+<text x="650.0" y="768" class="t muted" font-size="12.5" font-weight="400" text-anchor="middle">Built by a CBSE teacher, for teachers. AI drafts, the teacher decides.</text>
+</svg>
