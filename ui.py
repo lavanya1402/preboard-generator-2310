@@ -1,7 +1,13 @@
 """Shared Streamlit pieces: branding, cached data, small formatting helpers."""
+from pathlib import Path
+
 import streamlit as st
 
 import storage
+
+ASSETS = Path(__file__).resolve().parent / "assets"
+LOGO = str(ASSETS / "logo_320.png")
+FAVICON = str(ASSETS / "favicon.png")
 
 BRAND = "Lavanya AI Consultancy"
 BRAND_LINE = "An initiative to make Schools AI-enabled"
@@ -22,8 +28,10 @@ def page_header(title, subtitle=None):
 
 
 def sidebar_brand():
+    st.logo(LOGO, size="large")
     with st.sidebar:
-        st.markdown(f"### :blue[{BRAND}]")
+        st.image(LOGO, width=140)
+        st.markdown(f"**{BRAND}**")
         st.caption(BRAND_LINE)
         st.divider()
 

@@ -25,7 +25,8 @@ with left:
     st.markdown(":red[**AI drafts. The teacher decides.**]")
 with right:
     with st.container(border=True):
-        st.subheader(f":blue[{ui.BRAND}]", anchor=False)
+        st.image(ui.LOGO, width=150)
+        st.subheader(ui.BRAND, anchor=False)
         st.markdown(f"**{ui.BRAND_LINE}.**")
         st.markdown(
             "Practical AI tools built by a CBSE teacher, for teachers – saving time on routine work while "

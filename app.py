@@ -9,7 +9,7 @@ import streamlit as st
 import storage
 import ui
 
-st.set_page_config(page_title=f"{ui.APP_NAME} · {ui.BRAND}", page_icon=":material/school:", layout="wide")
+st.set_page_config(page_title=f"{ui.APP_NAME} · {ui.BRAND}", page_icon=ui.FAVICON, layout="wide")
 
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
@@ -20,8 +20,9 @@ def login_screen():
     _, middle, _ = st.columns([1, 1.4, 1])
     with middle:
         st.space("large")
-        with st.container(border=True):
-            st.markdown(f"#### :blue[{ui.BRAND.upper()}]")
+        with st.container(border=True, horizontal_alignment="center"):
+            st.image(ui.LOGO, width=180)
+            st.markdown(f"**{ui.BRAND}**")
             st.caption(ui.BRAND_LINE)
             st.title(ui.APP_NAME, anchor=False)
             st.markdown("CBSE Class 10 Science · Biology")
