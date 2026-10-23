@@ -77,7 +77,7 @@ Heredity 4 · Our Environment 3. *(Starter blueprint – refined by the Blueprin
 ## Run locally (Windows)
 
 ```
-git clone https://github.com/<your-username>/preboard-generator-2310.git
+git clone https://github.com/lavanya1402/preboard-generator-2310.git
 cd preboard-generator-2310
 py -3.13 -m venv .venv
 .venv\Scripts\python.exe -m pip install -r requirements.txt
