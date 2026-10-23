@@ -40,15 +40,21 @@ OPTION_TYPES = ("mcq", "assertion_reason")
 REQUIRED = ("id", "chapter_id", "chapter", "topic", "qtype", "marks", "difficulty",
             "question", "answer", "marking_scheme", "status", "source", "created_at")
 DUPLICATE_THRESHOLD = 0.85
+AR_OPTIONS = [
+    "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+    "Assertion (A) is true, but Reason (R) is false.",
+    "Assertion (A) is false, but Reason (R) is true.",
+]
 QUESTION_FIELDS = REQUIRED + ("competency_based", "options", "explanation", "last_used_in_paper")
 
 
 class ValidationError(ValueError):
-    """Raised when a question is not fit to be saved. .errors holds every problem found."""
+    """Raised when a question or blueprint is not fit to be saved. .errors holds every problem found."""
 
     def __init__(self, errors):
         self.errors = list(errors)
-        super().__init__("Question not saved:\n- " + "\n- ".join(self.errors))
+        super().__init__("Not saved:\n- " + "\n- ".join(self.errors))
 
 
 # ---------------------------------------------------------------- settings
@@ -228,7 +234,42 @@ def get_blueprint():
     return backend().get_doc("blueprint")
 
 
+def validate_blueprint(bp, chapters=None):
+    """Return a list of problems with a blueprint (empty list = OK)."""
+    chapters = chapter_names() if chapters is None else chapters
+    errors = []
+    for field in ("title", "total_marks", "total_questions", "duration", "sections", "chapter_marks"):
+        if not bp.get(field):
+            errors.append(f"'{field}' is missing.")
+    if errors:
+        return errors
+    for s in bp["sections"]:
+        if s.get("qtype") not in QTYPE_MARKS:
+            errors.append(f"Section {s.get('section')}: unknown question type '{s.get('qtype')}'.")
+        elif s.get("marks_each") != QTYPE_MARKS[s["qtype"]]:
+            errors.append(f"Section {s['section']}: '{s['qtype']}' questions carry {QTYPE_MARKS[s['qtype']]} mark(s), "
+                          f"not {s.get('marks_each')}.")
+    count = sum(s.get("count", 0) for s in bp["sections"])
+    marks = sum(s.get("count", 0) * s.get("marks_each", 0) for s in bp["sections"])
+    if count != bp["total_questions"]:
+        errors.append(f"Sections have {count} questions but total_questions is {bp['total_questions']}.")
+    if marks != bp["total_marks"]:
+        errors.append(f"Sections add up to {marks} marks but total_marks is {bp['total_marks']}.")
+    if sum(bp["chapter_marks"].values()) != bp["total_marks"]:
+        errors.append(f"Chapter marks add up to {sum(bp['chapter_marks'].values())}, not {bp['total_marks']}.")
+    unknown = [c for c in bp["chapter_marks"] if chapters and c not in chapters]
+    if unknown:
+        errors.append(f"Chapters not in the syllabus: {', '.join(unknown)}.")
+    mix = bp.get("difficulty_mix")
+    if mix and abs(sum(mix.values()) - 1) > 0.01:
+        errors.append("difficulty_mix shares must add up to 1.0.")
+    return errors
+
+
 def save_blueprint(data):
+    errors = validate_blueprint(data)
+    if errors:
+        raise ValidationError(errors)
     backend().save_doc("blueprint", data)
 
 
@@ -371,6 +412,11 @@ def add_question(q, status="pending", source="ai"):
         q.setdefault("marks", QTYPE_MARKS[q["qtype"]])
     if q.get("chapter_id") in chapters:
         q.setdefault("chapter", chapters[q["chapter_id"]])
+    if q.get("qtype") == "assertion_reason" and not q.get("options"):
+        q["options"] = list(AR_OPTIONS)
+    answer = str(q.get("answer", "")).strip().lower().strip("()")
+    if q.get("options") and answer in ("a", "b", "c", "d") and len(q["options"]) == 4:
+        q["answer"] = q["options"]["abcd".index(answer)]  # allow "b" / "(b)" as the answer
     if not q.get("id") and q.get("chapter_id") and q.get("qtype"):
         q["id"] = next_question_id(q["chapter_id"], q["qtype"], existing)
 
