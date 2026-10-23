@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Preboard Generator – promo</title>
+<!--
+  30-second story video (1080 x 1350). Recorded by render_promo.py, which pauses every CSS
+  animation and sets its time frame by frame, so all timing below is absolute seconds from 0.
+  Scenes: 1 struggle 0-8 | 2 reveal 8-11.5 | 3 the app 11.5-20 | 4 time for what matters 20-26.5 | 5 end card 26.5-30
+-->
+<style>
+  :root {
+    --night: #121c33; --night2: #1b2a4a; --ink: #1f4fd1; --pen: #c8372d;
+    --gold: #e9b949; --gold-deep: #b9811c; --brown: #2b1a0e; --paper: #fbfaf6;
+    --text: #1b2a4a; --muted: #5b6b85; --ok: #2e8b57;
+    --skin: #c98b62; --hair: #2a1b14; --kurta: #3d6fb6;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #000; }
+  body { font-family: "Segoe UI", system-ui, sans-serif; }
+  #stage { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: var(--night); }
+  .scene { position: absolute; inset: 0; opacity: 0; animation: sceneFade var(--len) linear both; animation-delay: var(--at); }
+  .scene.last { animation-name: sceneIn; }
+  @keyframes sceneFade { 0% { opacity: 0 } 7% { opacity: 1 } 93% { opacity: 1 } 100% { opacity: 0 } }
+  @keyframes sceneIn { 0% { opacity: 0 } 15% { opacity: 1 } 100% { opacity: 1 } }
+
+  .pop { opacity: 0; animation: pop .55s cubic-bezier(.2, .9, .3, 1.25) both; }
+  @keyframes pop { from { opacity: 0; transform: translateY(26px) scale(.94); } to { opacity: 1; transform: none; } }
+  .fade { opacity: 0; animation: fade .6s ease both; }
+  @keyframes fade { to { opacity: 1; } }
+  .abs { position: absolute; }
+  .center { left: 0; right: 0; text-align: center; }
+
+  /* ---------- scene 1: the struggle ---------- */
+  .s1 { background: radial-gradient(circle at 50% 55%, #22355e 0%, var(--night) 70%); color: #fff; }
+  .s1 .cap { top: 70px; font-size: 58px; font-weight: 800; letter-spacing: -.5px; }
+  .s1 .cap small { display: block; font-size: 32px; font-weight: 500; color: #b9c6e4; margin-top: 6px; }
+  .clock { top: 500px; right: 70px; width: 120px; height: 120px; border-radius: 50%; border: 6px solid #fff; }
+  .clock i { position: absolute; left: 50%; bottom: 50%; width: 6px; margin-left: -3px; background: #fff; border-radius: 3px; transform-origin: 50% 100%; }
+  .clock .h { height: 34px; animation: spin 8s linear both; }
+  .clock .m { height: 50px; background: var(--gold); animation: spin .8s linear 10 both; }
+  @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+  .tasks { top: 250px; left: 60px; right: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .task { background: rgba(255, 255, 255, .1); border: 2px solid rgba(255, 255, 255, .25); border-radius: 18px;
+          padding: 18px 22px; font-size: 29px; font-weight: 600; display: flex; gap: 14px; align-items: center; }
+  .task b { font-size: 34px; }
+  .scene1-art { top: 470px; left: 90px; width: 900px; height: 600px; }
+  .stat { bottom: 70px; }
+  .stat .big { font-size: 104px; font-weight: 900; color: #ff6b5e; line-height: 1; }
+  .stat .small { font-size: 38px; font-weight: 600; color: #dfe6f5; margin-top: 8px; }
+  .stack { transform-origin: 50% 100%; animation: grow 6s ease-out both; }
+  @keyframes grow { from { transform: scaleY(.25); } to { transform: scaleY(1); } }
+  .ball { animation: drop 1.4s ease-in both; }
+  @keyframes drop { from { transform: translate(0, -260px) rotate(0); opacity: 0; } 15% { opacity: 1; } to { transform: translate(0, 0) rotate(300deg); opacity: 1; } }
+  .steam { animation: steam 2s ease-in-out 4 both; }
+  @keyframes steam { 0% { opacity: 0; transform: translateY(10px); } 50% { opacity: .8; } 100% { opacity: 0; transform: translateY(-30px); } }
+  .sigh { animation: sigh 2s ease-in-out 4 both; transform-origin: 450px 330px; }
+  @keyframes sigh { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(2deg); } }
+
+  /* ---------- scene 2: the turn ---------- */
+  .s2 { background: radial-gradient(circle at 50% 45%, #fff3c4 0%, var(--gold) 38%, var(--gold-deep) 75%, var(--brown) 100%); color: var(--brown); }
+  .rays { left: 50%; top: 46%; width: 1800px; height: 1800px; margin: -900px 0 0 -900px;
+          background: repeating-conic-gradient(rgba(255, 255, 255, .18) 0 6deg, transparent 6deg 18deg);
+          animation: spin 40s linear both; border-radius: 50%; }
+  .s2 .q { top: 170px; font-size: 64px; font-weight: 800; line-height: 1.15; }
+  .s2 .logo { left: 50%; top: 430px; width: 330px; height: 330px; margin-left: -165px; border-radius: 34px;
+              box-shadow: 0 30px 80px rgba(43, 26, 14, .45); }
+  .s2 .presents { top: 830px; font-size: 36px; font-weight: 600; letter-spacing: 1px; }
+  .s2 .name { top: 890px; font-size: 92px; font-weight: 900; letter-spacing: -1px; }
+  .s2 .line { top: 1020px; font-size: 34px; font-weight: 600; }
+
+  /* ---------- scene 3: the app ---------- */
+  .s3 { background: linear-gradient(180deg, #eef3ff 0%, #f5f7f6 60%); color: var(--text); }
+  .s3 .cap { top: 60px; font-size: 56px; font-weight: 800; }
+  .s3 .cap span { color: var(--ink); }
+  .laptop { top: 180px; left: 70px; width: 940px; height: 560px; background: #1d232e; border-radius: 26px; padding: 22px; }
+  .laptop::after { content: ""; position: absolute; left: -40px; right: -40px; bottom: -26px; height: 26px; background: #c7ced8; border-radius: 0 0 26px 26px; }
+  .screen { position: relative; width: 100%; height: 100%; background: #f5f7f6; border-radius: 8px; overflow: hidden; display: flex; }
+  .side { width: 220px; background: #e8eefc; padding: 18px 16px; display: flex; flex-direction: column; gap: 12px; }
+  .side img { width: 64px; height: 64px; border-radius: 10px; }
+  .side .brand { font-size: 15px; font-weight: 700; }
+  .nav { font-size: 16px; padding: 8px 10px; border-radius: 8px; color: var(--muted); }
+  .nav.on { background: #cfdaf7; color: var(--text); font-weight: 700; }
+  .main { flex: 1; padding: 26px 30px; }
+  .main h3 { margin: 0 0 4px; font-size: 34px; }
+  .main .sub { font-size: 15px; color: var(--muted); margin-bottom: 18px; }
+  .field-label { font-size: 16px; margin-bottom: 6px; }
+  .field { height: 50px; background: #e8eefc; border-radius: 10px; padding: 12px 16px; font-size: 21px; white-space: nowrap; position: relative; }
+  .typed { display: inline-block; animation: type 2.2s steps(34) both; animation-delay: 12.2s; clip-path: inset(0 100% 0 0); }
+  @keyframes type { to { clip-path: inset(0 0 0 0); } }
+  .row { display: flex; gap: 14px; margin-top: 16px; }
+  .row .field { flex: 1; font-size: 18px; }
+  .btn { margin-top: 22px; display: inline-flex; align-items: center; gap: 10px; background: var(--ink); color: #fff; font-size: 22px; font-weight: 700;
+         padding: 14px 28px; border-radius: 12px; position: relative; animation: press .3s ease both; animation-delay: 14.6s; }
+  @keyframes press { 50% { transform: scale(.92); } 100% { transform: scale(1); } }
+  .ripple { position: absolute; left: 50%; top: 50%; width: 30px; height: 30px; margin: -15px; border-radius: 50%; background: rgba(255, 255, 255, .6);
+            opacity: 0; animation: ripple .7s ease-out both; animation-delay: 14.6s; }
+  @keyframes ripple { 0% { opacity: .9; transform: scale(.2); } 100% { opacity: 0; transform: scale(8); } }
+  .working { margin-top: 18px; font-size: 18px; color: var(--muted); opacity: 0; animation: blink .8s ease 14.75s 1 both; }
+  @keyframes blink { 0% { opacity: 0 } 30% { opacity: 1 } 80% { opacity: 1 } 100% { opacity: 0 } }
+  .cursor { top: 640px; left: 760px; width: 46px; animation: aim 1.4s cubic-bezier(.4, 0, .2, 1) both; animation-delay: 13.2s; }
+  @keyframes aim { to { transform: translate(-338px, -134px); } }
+  .sheet { top: 790px; left: 90px; width: 600px; height: 440px; background: var(--paper); border-radius: 14px; padding: 26px 30px;
+           box-shadow: 0 24px 60px rgba(27, 42, 74, .22); transform-origin: 50% 0; }
+  .sheet .school { text-align: center; font-size: 22px; font-weight: 800; }
+  .sheet .exam { text-align: center; font-size: 16px; color: var(--muted); margin-bottom: 12px; }
+  .sec { font-size: 14px; font-weight: 800; color: var(--ink); margin: 8px 0 4px; letter-spacing: .5px; }
+  .qline { height: 11px; border-radius: 6px; background: #d6dbe5; margin: 7px 0; transform-origin: 0 50%; animation: line .35s ease-out both; }
+  @keyframes line { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .checks { top: 800px; left: 720px; width: 300px; display: flex; flex-direction: column; gap: 16px; }
+  .chip { background: #fff; border-radius: 16px; padding: 16px 18px; font-size: 24px; font-weight: 700; box-shadow: 0 10px 30px rgba(27, 42, 74, .12);
+          display: flex; gap: 12px; align-items: center; }
+  .chip .tick { width: 34px; height: 34px; border-radius: 50%; background: var(--ok); color: #fff; display: grid; place-items: center; font-size: 20px; }
+  .chip.pdf .tick { background: var(--pen); font-size: 13px; font-weight: 800; }
+  .chip.pen { background: #fbeceb; color: var(--pen); font-size: 21px; }
+  .timer { top: 74px; right: 60px; background: var(--ink); color: #fff; font-size: 26px; font-weight: 800; padding: 10px 20px; border-radius: 30px; }
+
+  /* ---------- scene 4: time for what matters ---------- */
+  .s4 { background: linear-gradient(180deg, #fff6dd 0%, #fdf1cf 45%, #f6e1a8 100%); color: var(--brown); }
+  .s4 .cap { top: 70px; font-size: 60px; font-weight: 900; line-height: 1.12; }
+  .s4 .cap span { color: var(--ink); }
+  .swap { top: 250px; font-size: 40px; font-weight: 800; }
+  .swap s { color: var(--pen); text-decoration-thickness: 5px; }
+  .swap b { color: var(--ok); }
+  .scene4-art { top: 330px; left: 290px; width: 500px; height: 520px; }
+  .goods { top: 850px; left: 60px; right: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .good { background: #fff; border-radius: 22px; padding: 22px 24px; display: flex; gap: 16px; align-items: center;
+          box-shadow: 0 12px 30px rgba(43, 26, 14, .12); font-size: 27px; font-weight: 700; color: var(--text); }
+  .good .ic { font-size: 46px; }
+  .tag { bottom: 50px; font-size: 46px; font-weight: 900; }
+  .tag .a { color: var(--ink); } .tag .b { color: var(--pen); }
+  .sparkle { animation: twinkle 1.2s ease-in-out 6 both; transform-box: fill-box; transform-origin: center; }
+  @keyframes twinkle { 0%, 100% { opacity: .2; transform: scale(.6); } 50% { opacity: 1; transform: scale(1.1); } }
+
+  /* ---------- scene 5: end card ---------- */
+  .s5 { background: radial-gradient(circle at 50% 40%, #fff3c4 0%, var(--gold) 40%, var(--gold-deep) 80%, var(--brown) 100%); color: var(--brown); }
+  .s5 .logo { left: 50%; top: 200px; width: 420px; height: 420px; margin-left: -210px; border-radius: 40px; box-shadow: 0 30px 90px rgba(43, 26, 14, .5); }
+  .s5 .n { top: 680px; font-size: 70px; font-weight: 900; }
+  .s5 .l { top: 775px; font-size: 38px; font-weight: 600; }
+  .s5 .p { top: 900px; font-size: 34px; font-weight: 700; color: #fff; }
+  .s5 .p span { background: var(--brown); padding: 12px 26px; border-radius: 40px; }
+  .s5 .cta { top: 1010px; font-size: 34px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <!-- ===== SCENE 1: the struggle (0–8 s) ===== -->
+  <section class="scene s1" style="--at:0s; --len:8s">
+    <div class="abs center cap pop" style="animation-delay:.2s">Preboard season. 11:47 PM.<small>One teacher. One paper. A long night.</small></div>
+    <div class="abs clock fade" style="animation-delay:.4s"><i class="h"></i><i class="m"></i></div>
+    <div class="abs tasks">
+      <div class="task pop" style="animation-delay:1.2s"><b>📘</b>Read the CBSE sample paper</div>
+      <div class="task pop" style="animation-delay:2.0s"><b>⚖️</b>Balance marks for 5 chapters</div>
+      <div class="task pop" style="animation-delay:2.8s"><b>✍️</b>Write 16 good questions</div>
+      <div class="task pop" style="animation-delay:3.6s"><b>🗝️</b>Type the answer key</div>
+    </div>
+    <svg class="abs scene1-art" viewBox="0 0 900 600" aria-hidden="true">
+      <!-- lamp glow -->
+      <ellipse cx="450" cy="420" rx="420" ry="150" fill="#f2c14e" opacity=".12"/>
+      <!-- teacher (tired) -->
+      <g class="sigh">
+        <path d="M330 470 Q330 330 450 320 Q570 330 570 470 Z" fill="var(--kurta)"/>
+        <path d="M400 330 Q450 360 500 330 L490 345 Q450 372 410 345 Z" fill="#f2c14e"/>
+        <rect x="430" y="290" width="40" height="40" rx="12" fill="var(--skin)"/>
+        <circle cx="450" cy="245" r="62" fill="var(--skin)"/>
+        <path d="M388 250 Q380 170 450 170 Q522 168 514 250 Q505 205 450 200 Q398 202 388 250 Z" fill="var(--hair)"/>
+        <circle cx="505" cy="185" r="28" fill="var(--hair)"/>
+        <path d="M420 250 q12 8 24 0" stroke="#3a2418" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M458 250 q12 8 24 0" stroke="#3a2418" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M432 285 q18 -12 36 0" stroke="#3a2418" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- hand on forehead -->
+        <path d="M345 420 Q350 300 405 215" stroke="var(--kurta)" stroke-width="42" fill="none" stroke-linecap="round"/>
+        <circle cx="410" cy="212" r="24" fill="var(--skin)"/>
+      </g>
+      <!-- desk -->
+      <rect x="60" y="440" width="780" height="34" rx="8" fill="#8b5a2b"/>
+      <rect x="100" y="474" width="26" height="126" fill="#6e4520"/><rect x="774" y="474" width="26" height="126" fill="#6e4520"/>
+      <!-- laptop -->
+      <path d="M380 440 L400 360 L560 360 L580 440 Z" fill="#c7ced8"/>
+      <rect x="402" y="366" width="156" height="66" fill="#8fa6d8" opacity=".6"/>
+      <!-- paper stacks -->
+      <g class="stack" style="animation-delay:.5s">
+        <rect x="120" y="300" width="150" height="140" fill="#fff"/>
+        <g stroke="#c9d2dc" stroke-width="3"><line x1="120" y1="320" x2="270" y2="320"/><line x1="120" y1="345" x2="270" y2="345"/><line x1="120" y1="370" x2="270" y2="370"/><line x1="120" y1="395" x2="270" y2="395"/><line x1="120" y1="420" x2="270" y2="420"/></g>
+      </g>
+      <g class="stack" style="animation-delay:1.5s">
+        <rect x="640" y="250" width="140" height="190" fill="#fff"/>
+        <g stroke="#c9d2dc" stroke-width="3"><line x1="640" y1="275" x2="780" y2="275"/><line x1="640" y1="305" x2="780" y2="305"/><line x1="640" y1="335" x2="780" y2="335"/><line x1="640" y1="365" x2="780" y2="365"/><line x1="640" y1="395" x2="780" y2="395"/><line x1="640" y1="425" x2="780" y2="425"/></g>
+      </g>
+      <!-- coffee -->
+      <rect x="590" y="395" width="40" height="45" rx="6" fill="#e9eef7"/>
+      <path d="M630 405 q20 0 20 15 q0 15 -20 15" stroke="#e9eef7" stroke-width="6" fill="none"/>
+      <path class="steam" d="M603 385 q-10 -15 0 -30 q10 -15 0 -30" stroke="#fff" stroke-width="4" fill="none" opacity=".7"/>
+      <!-- crumpled paper falling -->
+      <circle class="ball" cx="300" cy="560" r="20" fill="#f4f1e8" style="animation-delay:2.4s"/>
+      <circle class="ball" cx="610" cy="575" r="17" fill="#f4f1e8" style="animation-delay:4s"/>
+      <circle class="ball" cx="200" cy="580" r="15" fill="#f4f1e8" style="animation-delay:5.3s"/>
+    </svg>
+    <div class="abs center stat pop" style="animation-delay:5s">
+      <div class="big">4–6 hours</div>
+      <div class="small">for just ONE preboard paper</div>
+    </div>
+  </section>
+
+  <!-- ===== SCENE 2: the turn (8–11.5 s) ===== -->
+  <section class="scene s2" style="--at:8s; --len:3.5s">
+    <div class="abs rays"></div>
+    <div class="abs center q pop" style="animation-delay:8.25s">What if it took<br>just 15 minutes?</div>
+    <img class="abs logo pop" style="animation-delay:9.0s" src="logo.png" alt="">
+    <div class="abs center presents pop" style="animation-delay:9.5s">LAVANYA AI CONSULTANCY PRESENTS</div>
+    <div class="abs center name pop" style="animation-delay:9.8s">Preboard Generator</div>
+    <div class="abs center line pop" style="animation-delay:10.2s">CBSE Class 10 Science · Biology</div>
+  </section>
+
+  <!-- ===== SCENE 3: the app (11.5–20 s) ===== -->
+  <section class="scene s3" style="--at:11.5s; --len:8.5s">
+    <div class="abs center cap pop" style="animation-delay:11.7s">One click. <span>Full paper.</span></div>
+    <div class="abs laptop pop" style="animation-delay:11.8s">
+      <div class="screen">
+        <div class="side">
+          <img src="logo.png" alt="">
+          <div class="brand">Lavanya AI Consultancy</div>
+          <div class="nav on">Generate paper</div>
+          <div class="nav">Teacher review</div>
+          <div class="nav">Question bank</div>
+        </div>
+        <div class="main">
+          <h3>Generate paper</h3>
+          <div class="sub">30-mark Biology preboard from teacher-approved questions</div>
+          <div class="field-label">School name</div>
+          <div class="field"><span class="typed">Kendriya Vidyalaya No. 1, Lucknow</span></div>
+          <div class="row"><div class="field">Preboard Examination 2026-27</div><div class="field">3 Hours</div></div>
+          <div class="btn">✦ Generate<span class="ripple"></span></div>
+          <div class="working">Choosing questions…</div>
+        </div>
+      </div>
+    </div>
+    <svg class="abs cursor" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2 L4 20 L9 15 L12.5 22 L15.5 20.5 L12 13.8 L19 13.8 Z" fill="#111" stroke="#fff" stroke-width="1.5"/></svg>
+    <div class="abs sheet pop" style="animation-delay:15.2s">
+      <div class="school">Kendriya Vidyalaya No. 1, Lucknow</div>
+      <div class="exam">Preboard Examination 2026-27 · Class X Science (Biology) · 30 marks</div>
+      <div class="sec">SECTION A</div>
+      <div class="qline" style="width:92%; animation-delay:15.5s"></div><div class="qline" style="width:80%; animation-delay:15.6s"></div>
+      <div class="qline" style="width:88%; animation-delay:15.7s"></div><div class="qline" style="width:70%; animation-delay:15.8s"></div>
+      <div class="sec">SECTION B</div>
+      <div class="qline" style="width:95%; animation-delay:16.0s"></div><div class="qline" style="width:78%; animation-delay:16.1s"></div>
+      <div class="sec">SECTION C · D</div>
+      <div class="qline" style="width:90%; animation-delay:16.3s"></div><div class="qline" style="width:84%; animation-delay:16.4s"></div>
+      <div class="sec">SECTION E · CASE-BASED</div>
+      <div class="qline" style="width:96%; animation-delay:16.6s"></div><div class="qline" style="width:74%; animation-delay:16.7s"></div>
+    </div>
+    <div class="abs checks">
+      <div class="chip pop" style="animation-delay:16.4s"><span class="tick">✓</span>16 questions</div>
+      <div class="chip pop" style="animation-delay:16.8s"><span class="tick">✓</span>30 marks</div>
+      <div class="chip pop" style="animation-delay:17.2s"><span class="tick">✓</span>Answer key</div>
+      <div class="chip pdf pop" style="animation-delay:17.7s"><span class="tick">PDF</span>Ready to print</div>
+      <div class="chip pen pop" style="animation-delay:18.3s">✔ Every question approved by the teacher</div>
+    </div>
+  </section>
+
+  <!-- ===== SCENE 4: time for what matters (20–26.5 s) ===== -->
+  <section class="scene s4" style="--at:20s; --len:6.5s">
+    <div class="abs center cap pop" style="animation-delay:20.2s">Hours saved.<br><span>Time for what matters.</span></div>
+    <div class="abs center swap pop" style="animation-delay:20.8s"><s>4–6 hours</s> → <b>about 15 minutes</b></div>
+    <svg class="abs scene4-art" viewBox="0 0 500 520" aria-hidden="true">
+      <circle cx="250" cy="250" r="210" fill="#fff" opacity=".55"/>
+      <path class="sparkle" d="M70 120 l8 20 l20 8 l-20 8 l-8 20 l-8 -20 l-20 -8 l20 -8 z" fill="#e9b949" style="animation-delay:21s"/>
+      <path class="sparkle" d="M420 90 l6 15 l15 6 l-15 6 l-6 15 l-6 -15 l-15 -6 l15 -6 z" fill="#1f4fd1" style="animation-delay:21.4s"/>
+      <path class="sparkle" d="M430 330 l7 17 l17 7 l-17 7 l-7 17 l-7 -17 l-17 -7 l17 -7 z" fill="#c8372d" style="animation-delay:21.8s"/>
+      <!-- teacher (happy) -->
+      <path d="M130 520 Q130 330 250 315 Q370 330 370 520 Z" fill="var(--kurta)"/>
+      <path d="M200 325 Q250 360 300 325 L290 342 Q250 372 210 342 Z" fill="#f2c14e"/>
+      <rect x="230" y="285" width="40" height="40" rx="12" fill="var(--skin)"/>
+      <circle cx="250" cy="235" r="66" fill="var(--skin)"/>
+      <path d="M184 240 Q176 152 250 152 Q326 150 318 240 Q308 192 250 186 Q194 190 184 240 Z" fill="var(--hair)"/>
+      <circle cx="308" cy="166" r="30" fill="var(--hair)"/>
+      <circle cx="226" cy="236" r="7" fill="#3a2418"/><circle cx="274" cy="236" r="7" fill="#3a2418"/>
+      <path d="M222 262 q28 26 56 0" stroke="#3a2418" stroke-width="6" fill="none" stroke-linecap="round"/>
+      <circle cx="208" cy="258" r="10" fill="#e6735c" opacity=".35"/><circle cx="292" cy="258" r="10" fill="#e6735c" opacity=".35"/>
+      <!-- waving arm -->
+      <path d="M350 420 Q400 360 410 290" stroke="var(--kurta)" stroke-width="40" fill="none" stroke-linecap="round"/>
+      <circle cx="412" cy="282" r="24" fill="var(--skin)"/>
+    </svg>
+    <div class="abs goods">
+      <div class="good pop" style="animation-delay:21.6s"><span class="ic">🧑‍🏫</span>Mentoring students one-to-one</div>
+      <div class="good pop" style="animation-delay:22.2s"><span class="ic">🎨</span>Creative, activity-based lessons</div>
+      <div class="good pop" style="animation-delay:22.8s"><span class="ic">🤝</span>Extra help for students who need it</div>
+      <div class="good pop" style="animation-delay:23.4s"><span class="ic">🏡</span>Time for family and rest</div>
+    </div>
+    <div class="abs center tag pop" style="animation-delay:24.3s"><span class="a">AI drafts.</span> <span class="b">The teacher decides.</span></div>
+  </section>
+
+  <!-- ===== SCENE 5: end card (26.5–30 s) ===== -->
+  <section class="scene s5 last" style="--at:26.5s; --len:3.5s">
+    <div class="abs rays" style="top:34%"></div>
+    <img class="abs logo pop" style="animation-delay:26.7s" src="logo.png" alt="Lavanya AI Consultancy">
+    <div class="abs center n pop" style="animation-delay:27.1s">Lavanya AI Consultancy</div>
+    <div class="abs center l pop" style="animation-delay:27.4s">An initiative to make Schools AI-enabled</div>
+    <div class="abs center p pop" style="animation-delay:27.8s"><span>Preboard Generator</span></div>
+    <div class="abs center cta pop" style="animation-delay:28.2s">Bring it to your school ✦</div>
+  </section>
+
+</div>
+</body>
+</html>
