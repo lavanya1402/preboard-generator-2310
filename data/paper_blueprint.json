@@ -1,0 +1,34 @@
+{
+  "title": "Class 10 Science – Biology Preboard",
+  "session": "2026-27",
+  "total_marks": 30,
+  "total_questions": 16,
+  "duration": "3 Hours",
+  "verified": false,
+  "note": "Starter blueprint following the CBSE Science sample-paper sections (A: MCQ + Assertion-Reason, B: 2-mark, C: 3-mark, D: 5-mark, E: 4-mark case-based), scaled to a 30-mark Biology paper. To be refined by agents/blueprint_agent.md.",
+  "sections": [
+    {"section": "A", "qtype": "mcq", "label": "Multiple Choice Questions", "count": 7, "marks_each": 1},
+    {"section": "A", "qtype": "assertion_reason", "label": "Assertion–Reason Questions", "count": 2, "marks_each": 1},
+    {"section": "B", "qtype": "vsa", "label": "Very Short Answer Questions", "count": 3, "marks_each": 2},
+    {"section": "C", "qtype": "sa", "label": "Short Answer Questions", "count": 2, "marks_each": 3},
+    {"section": "D", "qtype": "la", "label": "Long Answer Question", "count": 1, "marks_each": 5},
+    {"section": "E", "qtype": "case_based", "label": "Case-Based Question", "count": 1, "marks_each": 4}
+  ],
+  "chapter_marks": {
+    "life_processes": 10,
+    "control_coordination": 6,
+    "reproduction": 7,
+    "heredity": 4,
+    "our_environment": 3
+  },
+  "difficulty_mix": {"easy": 0.3, "medium": 0.5, "hard": 0.2},
+  "competency_based_target": 0.5,
+  "general_instructions": [
+    "This question paper contains 16 questions. All questions are compulsory.",
+    "Section A has 9 questions of 1 mark each (Multiple Choice and Assertion–Reason).",
+    "Section B has 3 questions of 2 marks each. Answer in about 30–50 words.",
+    "Section C has 2 questions of 3 marks each. Answer in about 50–80 words.",
+    "Section D has 1 question of 5 marks. Answer in about 80–120 words.",
+    "Section E has 1 case-based question of 4 marks with sub-parts."
+  ]
+}

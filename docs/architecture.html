@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preboard Generator Architecture</title>
+<style>
+  :root {
+    --ink: #1f4fd1;
+    --pen: #c8372d;
+    --paper: #f5f7f6;
+    --card: #ffffff;
+    --border: #c9d2dc;
+    --text: #1b2a4a;
+    --muted: #5b6b85;
+    --mcp: #e8eefc;
+    --review: #fbeceb;
+    --band: #eef1f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #7c9dff; --pen: #ff7b70; --paper: #10161f; --card: #19212d;
+      --border: #34404f; --text: #e6ecf5; --muted: #9aa8bd; --mcp: #1c2a4d;
+      --review: #3a1f1f; --band: #161d27;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #7c9dff; --pen: #ff7b70; --paper: #10161f; --card: #19212d;
+    --border: #34404f; --text: #e6ecf5; --muted: #9aa8bd; --mcp: #1c2a4d;
+    --review: #3a1f1f; --band: #161d27;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 28px 16px 40px; background: var(--paper); color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.4;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 1.7rem; letter-spacing: -0.01em; }
+  header p { margin: 0 0 24px; color: var(--muted); }
+  header b.ink { color: var(--ink); } header b.pen { color: var(--pen); }
+
+  .flow {
+    display: grid; align-items: stretch;
+    grid-template-columns: 1fr 44px 1fr 44px 1.1fr 44px 1fr 44px 1fr;
+  }
+  .col {
+    background: var(--card); border: 1.5px solid var(--border); border-radius: 14px;
+    padding: 14px; display: flex; flex-direction: column; gap: 10px;
+    opacity: 0; transform: translateY(12px); animation: rise .6s ease forwards;
+  }
+  .col:nth-of-type(1) { animation-delay: .05s } .col:nth-of-type(2) { animation-delay: .2s }
+  .col:nth-of-type(3) { animation-delay: .35s } .col:nth-of-type(4) { animation-delay: .5s }
+  .col:nth-of-type(5) { animation-delay: .65s }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  .col.mcp { background: var(--mcp); border-color: var(--ink); }
+  .col.review { background: var(--review); border-color: var(--pen); }
+  .num { font-size: .75rem; font-weight: 700; color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+  .col h2 { margin: 0; font-size: 1.02rem; }
+  .item {
+    background: var(--card); border: 1px solid var(--border); border-radius: 9px;
+    padding: 8px 10px; font-size: .86rem;
+  }
+  .item small { display: block; color: var(--muted); font-size: .76rem; }
+  .review .item { border-color: color-mix(in srgb, var(--pen) 45%, var(--border)); }
+  .mcp .item { border-color: color-mix(in srgb, var(--ink) 35%, var(--border)); }
+  .pill { display: inline-block; font-size: .72rem; padding: 1px 8px; border-radius: 99px; font-weight: 600; margin: 2px 4px 0 0; }
+  .pill.ok { background: color-mix(in srgb, var(--ink) 14%, transparent); color: var(--ink); }
+  .pill.wait { background: color-mix(in srgb, var(--pen) 14%, transparent); color: var(--pen); }
+
+  /* moving arrows between columns */
+  .arrow { position: relative; display: flex; align-items: center; justify-content: center; }
+  .arrow .line {
+    width: 100%; height: 3px;
+    background: repeating-linear-gradient(90deg, var(--ink) 0 8px, transparent 8px 14px);
+    background-size: 14px 3px; animation: flow 0.7s linear infinite;
+  }
+  .arrow.red .line { background-image: repeating-linear-gradient(90deg, var(--pen) 0 8px, transparent 8px 14px); }
+  .arrow::after {
+    content: ""; position: absolute; right: 2px; border: 7px solid transparent;
+    border-left: 10px solid var(--ink); border-right: 0;
+  }
+  .arrow.red::after { border-left-color: var(--pen); }
+  @keyframes flow { from { background-position: 0 0; } to { background-position: 14px 0; } }
+
+  .loop {
+    margin: 18px 0 0; padding: 10px 14px; border: 1.5px dashed var(--pen); border-radius: 12px;
+    color: var(--pen); font-size: .9rem; display: flex; gap: 10px; align-items: center;
+    background: color-mix(in srgb, var(--review) 60%, transparent);
+  }
+  .loop .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--pen); flex: none; animation: pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { transform: scale(1.6); opacity: .5; } }
+
+  .deploy {
+    margin-top: 22px; padding: 14px 16px; background: var(--band); border: 1.5px solid var(--border);
+    border-radius: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  }
+  .deploy h3 { margin: 0 12px 0 0; font-size: .95rem; }
+  .deploy .item { flex: 1 1 180px; }
+  .deploy .sep { color: var(--ink); font-weight: 700; }
+  footer { margin-top: 18px; text-align: center; color: var(--muted); font-size: .85rem; }
+
+  @media (max-width: 900px) {
+    .flow { grid-template-columns: 1fr; }
+    .arrow { height: 40px; }
+    .arrow .line {
+      width: 3px; height: 100%; background-size: 3px 14px;
+      background-image: repeating-linear-gradient(180deg, var(--ink) 0 8px, transparent 8px 14px);
+      animation-name: flowdown;
+    }
+    .arrow.red .line { background-image: repeating-linear-gradient(180deg, var(--pen) 0 8px, transparent 8px 14px); }
+    .arrow::after { right: auto; bottom: 0; border: 7px solid transparent; border-top: 10px solid var(--ink); border-bottom: 0; }
+    .arrow.red::after { border-top-color: var(--pen); border-left-color: transparent; }
+    .deploy .sep { display: none; }
+  }
+  @keyframes flowdown { from { background-position: 0 0; } to { background-position: 0 14px; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; transform: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Preboard Generator</h1>
+    <p><b class="ink">AI drafts</b> the repetitive work &nbsp;·&nbsp; <b class="pen">the teacher decides</b> what goes into every paper.</p>
+  </header>
+
+  <div class="flow">
+    <section class="col">
+      <span class="num">1 · Sources</span>
+      <h2>Official CBSE material</h2>
+      <div class="item">Sample Paper 2026-27<small>+ marking scheme (format)</small></div>
+      <div class="item">Past board papers<small>~10 years (topic frequency)</small></div>
+      <div class="item">Syllabus 2026-27<small>+ NCERT Biology chapters</small></div>
+    </section>
+    <div class="arrow" aria-hidden="true"><div class="line"></div></div>
+
+    <section class="col">
+      <span class="num">2 · Agents</span>
+      <h2>Run by Claude Code</h2>
+      <div class="item">Pattern Agent<small>marks per chapter, question types</small></div>
+      <div class="item">Syllabus Agent<small>topics, deleted portions</small></div>
+      <div class="item">Blueprint Agent<small>~50% competency-based</small></div>
+      <div class="item">Question Agent<small>new CBSE-style questions</small></div>
+    </section>
+    <div class="arrow" aria-hidden="true"><div class="line"></div></div>
+
+    <section class="col mcp">
+      <span class="num">3 · cbse-paper-mcp</span>
+      <h2>MCP server + Storage</h2>
+      <div class="item">search_questions · add_question<small>new questions saved as <b>pending</b></small></div>
+      <div class="item">update_question_status · get_stats</div>
+      <div class="item">generate_paper<small>approved questions only, follows blueprint</small></div>
+      <div class="item">storage.py<small>JSON locally · Supabase on cloud</small></div>
+    </section>
+    <div class="arrow red" aria-hidden="true"><div class="line"></div></div>
+
+    <section class="col review">
+      <span class="num">4 · Teacher Review</span>
+      <h2>The red pen</h2>
+      <div class="item">Read each AI question<small>answer + step-wise marking</small></div>
+      <div class="item">
+        <span class="pill ok">Approve</span><span class="pill wait">Edit</span><span class="pill wait">Reject</span>
+      </div>
+      <div class="item">Only approved questions<small>can ever reach a paper</small></div>
+    </section>
+    <div class="arrow" aria-hidden="true"><div class="line"></div></div>
+
+    <section class="col">
+      <span class="num">5 · Streamlit app</span>
+      <h2>Outputs</h2>
+      <div class="item">Generate Paper<small>16 questions · 30 marks</small></div>
+      <div class="item">Question Paper PDF<small>with school header</small></div>
+      <div class="item">Answer Key PDF<small>step-wise marking scheme</small></div>
+      <div class="item">Analysis<small>chapter marks vs target, difficulty</small></div>
+    </section>
+  </div>
+
+  <div class="loop"><span class="dot"></span>Approve / edit / reject updates the question's status in storage — the paper engine only reads approved questions.</div>
+
+  <div class="deploy">
+    <h3>Deploy later</h3>
+    <div class="item">GitHub<small>code + animated diagram</small></div><span class="sep">→</span>
+    <div class="item">Streamlit Community Cloud<small>the live app</small></div><span class="sep">→</span>
+    <div class="item">Supabase<small>data that survives restarts</small></div>
+  </div>
+
+  <footer>Built by a CBSE teacher, for teachers. AI drafts, the teacher decides.</footer>
+</div>
+</body>
+</html>

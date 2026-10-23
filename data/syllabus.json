@@ -1,0 +1,83 @@
+{
+  "board": "CBSE",
+  "class": 10,
+  "subject": "Science",
+  "unit": "World of Living (Biology)",
+  "session": "2026-27",
+  "verified": false,
+  "note": "Starter syllabus based on the rationalised NCERT Class 10 Science textbook. To be checked against the official CBSE 2026-27 curriculum by agents/syllabus_agent.md before it is treated as final.",
+  "chapters": [
+    {
+      "chapter_id": "life_processes",
+      "ncert_chapter_no": 5,
+      "name": "Life Processes",
+      "topics": [
+        "What are life processes",
+        "Nutrition: autotrophic nutrition (photosynthesis)",
+        "Nutrition: heterotrophic nutrition and how organisms obtain food",
+        "Nutrition in human beings",
+        "Respiration: aerobic and anaerobic, human respiratory system",
+        "Transportation in human beings: heart, blood vessels, blood, lymph",
+        "Transportation in plants: water and food",
+        "Excretion in human beings and in plants"
+      ],
+      "deleted_or_formative_only": []
+    },
+    {
+      "chapter_id": "control_coordination",
+      "ncert_chapter_no": 6,
+      "name": "Control and Coordination",
+      "topics": [
+        "Animals: nervous system, neurons, synapse",
+        "Reflex action and reflex arc",
+        "Human brain and its parts",
+        "How nervous tissue causes action",
+        "Coordination in plants: immediate response to stimulus",
+        "Coordination in plants: movement due to growth (tropisms), plant hormones",
+        "Hormones in animals: endocrine glands and feedback mechanism"
+      ],
+      "deleted_or_formative_only": []
+    },
+    {
+      "chapter_id": "reproduction",
+      "ncert_chapter_no": 7,
+      "name": "How do Organisms Reproduce?",
+      "topics": [
+        "Do organisms create exact copies of themselves? DNA copying and variation",
+        "Modes of reproduction used by single organisms: fission, fragmentation, regeneration, budding, vegetative propagation, spore formation",
+        "Sexual reproduction: why the sexual mode",
+        "Sexual reproduction in flowering plants",
+        "Reproduction in human beings: changes at puberty, male and female reproductive systems",
+        "What happens when the egg is not fertilised",
+        "Reproductive health"
+      ],
+      "deleted_or_formative_only": []
+    },
+    {
+      "chapter_id": "heredity",
+      "ncert_chapter_no": 8,
+      "name": "Heredity",
+      "topics": [
+        "Accumulation of variation during reproduction",
+        "Inherited traits",
+        "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+        "How do these traits get expressed",
+        "Sex determination"
+      ],
+      "deleted_or_formative_only": []
+    },
+    {
+      "chapter_id": "our_environment",
+      "ncert_chapter_no": 13,
+      "name": "Our Environment",
+      "topics": [
+        "Ecosystem and its components",
+        "Food chains and webs, trophic levels, 10 percent law",
+        "Biological magnification",
+        "How do our activities affect the environment: ozone layer depletion",
+        "Managing the garbage we produce"
+      ],
+      "deleted_or_formative_only": []
+    }
+  ]
+}

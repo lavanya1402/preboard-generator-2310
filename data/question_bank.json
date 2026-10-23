@@ -1,0 +1,1548 @@
+[
+  {
+    "id": "LP-MCQ-001",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Nutrition in human beings",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Which of the following shows the correct order of steps in holozoic nutrition?",
+    "options": [
+      "Ingestion → digestion → absorption → assimilation → egestion",
+      "Ingestion → absorption → digestion → egestion → assimilation",
+      "Digestion → ingestion → assimilation → absorption → egestion",
+      "Ingestion → digestion → egestion → absorption → assimilation"
+    ],
+    "answer": "Ingestion → digestion → absorption → assimilation → egestion",
+    "explanation": "Food is taken in, broken down, absorbed into blood, used by cells, and undigested matter is removed.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-MCQ-002",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Nutrition: autotrophic nutrition (photosynthesis)",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "The opening and closing of stomata is controlled by:",
+    "options": [
+      "Guard cells",
+      "Epidermal cells",
+      "Xylem vessels",
+      "Phloem cells"
+    ],
+    "answer": "Guard cells",
+    "explanation": "Guard cells swell when they take in water (pore opens) and shrink when they lose water (pore closes).",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-MCQ-003",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Nutrition: autotrophic nutrition (photosynthesis)",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A student covers part of a leaf of a destarched potted plant with a strip of black paper and keeps the plant in sunlight for 4 hours. When the leaf is decolourised and tested with iodine, the covered part:",
+    "options": [
+      "turns blue-black, showing that light is not needed for photosynthesis",
+      "does not turn blue-black, showing that light is necessary for photosynthesis",
+      "turns blue-black, showing that chlorophyll is necessary for photosynthesis",
+      "does not turn blue-black, showing that carbon dioxide is necessary for photosynthesis"
+    ],
+    "answer": "does not turn blue-black, showing that light is necessary for photosynthesis",
+    "explanation": "No light reached the covered part, so no starch was made there and iodine did not give a blue-black colour.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-MCQ-004",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Nutrition in human beings",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "In which part of the human alimentary canal does the digestion of proteins begin?",
+    "options": [
+      "Mouth",
+      "Stomach",
+      "Small intestine",
+      "Large intestine"
+    ],
+    "answer": "Stomach",
+    "explanation": "Pepsin in the gastric juice of the stomach begins protein digestion in an acidic medium.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-MCQ-005",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Respiration: aerobic and anaerobic, human respiratory system",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "After running a long race, an athlete gets cramps in the leg muscles. This happens because of the build-up of:",
+    "options": [
+      "Lactic acid",
+      "Ethanol",
+      "Carbon dioxide",
+      "Glucose"
+    ],
+    "answer": "Lactic acid",
+    "explanation": "When oxygen is short, muscle cells break pyruvate into lactic acid, which causes cramps.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-MCQ-006",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Transportation in human beings: heart, blood vessels, blood, lymph",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "Which of the following statements about the human heart is correct?",
+    "options": [
+      "The left side of the heart pumps deoxygenated blood.",
+      "The ventricles have thinner walls than the atria.",
+      "Valves prevent the backward flow of blood when the atria or ventricles contract.",
+      "The right ventricle pumps blood to all parts of the body."
+    ],
+    "answer": "Valves prevent the backward flow of blood when the atria or ventricles contract.",
+    "explanation": "Valves ensure blood flows only in one direction. Ventricles have thicker walls; the left ventricle pumps to the body.",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-MCQ-007",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Respiration: aerobic and anaerobic, human respiratory system",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Aquatic animals like fish breathe much faster than land animals. The best reason for this is that:",
+    "options": [
+      "water contains more oxygen than air",
+      "the amount of oxygen dissolved in water is low compared to the oxygen in air",
+      "aquatic animals are smaller in size",
+      "aquatic animals do not need to remove carbon dioxide"
+    ],
+    "answer": "the amount of oxygen dissolved in water is low compared to the oxygen in air",
+    "explanation": "Since dissolved oxygen in water is fairly low, aquatic organisms must breathe faster to get enough oxygen.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-AR-001",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Transportation in human beings: heart, blood vessels, blood, lymph",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Assertion (A): Arteries have thick and elastic walls.\nReason (R): Blood in arteries flows under high pressure as it is pumped out of the heart.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "Thick elastic walls let arteries withstand the high pressure of blood leaving the heart.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-AR-002",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Nutrition in human beings",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "Assertion (A): The inner lining of the small intestine has numerous finger-like projections called villi.\nReason (R): Villi are richly supplied with blood vessels which carry absorbed food to every cell of the body.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+    "explanation": "Both are true, but villi exist mainly to increase the surface area for absorption; R does not explain why they are present.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-VSA-001",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Transportation in human beings: heart, blood vessels, blood, lymph",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Why is it necessary to separate oxygenated and deoxygenated blood in mammals and birds?",
+    "answer": "Mammals and birds are warm-blooded and need a lot of energy to keep their body temperature constant. Separation of the two kinds of blood gives a highly efficient supply of oxygen to the body.",
+    "marking_scheme": [
+      "1 mark: separation allows efficient supply of oxygen to the body.",
+      "1 mark: mammals and birds have high energy needs to maintain a constant body temperature."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-VSA-002",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Respiration: aerobic and anaerobic, human respiratory system",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Write two differences between aerobic and anaerobic respiration.",
+    "answer": "Aerobic respiration takes place in the presence of oxygen and anaerobic in its absence. Aerobic respiration releases much more energy and gives carbon dioxide and water, while anaerobic respiration releases less energy and gives ethanol and carbon dioxide (yeast) or lactic acid (muscles). Aerobic respiration is completed in the mitochondria; anaerobic occurs in the cytoplasm.",
+    "marking_scheme": [
+      "1 mark: any one correct difference (oxygen / site).",
+      "1 mark: any second correct difference (products / energy)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-VSA-003",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Excretion in human beings and in plants",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A patient's kidneys have stopped working. Name the procedure used to remove wastes from their blood and state its principle.",
+    "answer": "Haemodialysis (use of an artificial kidney). Blood is passed through long tubes with semi-permeable lining kept in a dialysing fluid; nitrogenous wastes pass from the blood into the fluid. There is no reabsorption.",
+    "marking_scheme": [
+      "1 mark: haemodialysis / artificial kidney.",
+      "1 mark: principle – diffusion of wastes through a semi-permeable membrane into dialysing fluid."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-SA-001",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Nutrition in human beings",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "State the role of each of the following in digestion: (a) saliva (b) hydrochloric acid in the stomach (c) bile juice.",
+    "answer": "(a) Saliva contains salivary amylase which breaks down starch into simple sugar.\n(b) Hydrochloric acid creates an acidic medium for the action of pepsin and kills germs in food.\n(c) Bile juice makes the food alkaline for pancreatic enzymes and breaks large fat globules into smaller ones (emulsification).",
+    "marking_scheme": [
+      "1 mark: role of saliva.",
+      "1 mark: role of HCl.",
+      "1 mark: role of bile (alkaline medium / emulsification)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-SA-002",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Transportation in plants: water and food",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "A gardener notices that potted plants kept in a very humid greenhouse lose less water through their leaves. (a) Name the process by which plants lose water from leaves. (b) Explain how this process helps in the upward movement of water. (c) Why is the process slower in humid air?",
+    "answer": "(a) Transpiration.\n(b) Water evaporates from leaf cells through stomata. This creates a suction pull that draws water up through the xylem from the roots.\n(c) Humid air already contains a lot of water vapour, so evaporation from the leaves is slower.",
+    "marking_scheme": [
+      "1 mark: transpiration.",
+      "1 mark: evaporation creates suction pulling water through xylem.",
+      "1 mark: humid air reduces evaporation."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-SA-003",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Excretion in human beings and in plants",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Explain how urine is formed in a nephron. How is the amount of urine produced regulated?",
+    "answer": "Blood is filtered in the glomerulus and the filtrate collects in Bowman's capsule. As the filtrate passes through the tubule, useful substances such as glucose, amino acids, salts and much of the water are selectively reabsorbed. The remaining fluid is urine, which goes to the collecting duct. The amount of water reabsorbed depends on how much excess water and dissolved waste the body needs to remove.",
+    "marking_scheme": [
+      "1 mark: filtration in glomerulus / Bowman's capsule.",
+      "1 mark: selective reabsorption in the tubule.",
+      "1 mark: regulation depends on excess water and dissolved wastes."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-LA-001",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Nutrition: autotrophic nutrition (photosynthesis)",
+    "qtype": "la",
+    "marks": 5,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) List the three main events that occur during photosynthesis.\n(b) Desert plants keep their stomata closed during the day. How do they get carbon dioxide for photosynthesis?\n(c) Write the balanced chemical equation for photosynthesis.",
+    "answer": "(a) (i) Absorption of light energy by chlorophyll. (ii) Conversion of light energy into chemical energy and splitting of water molecules into hydrogen and oxygen. (iii) Reduction of carbon dioxide to carbohydrates.\n(b) They open their stomata at night, take in CO₂ and store it as an intermediate (acid). During the day this stored CO₂ is used for photosynthesis.\n(c) 6CO₂ + 12H₂O → C₆H₁₂O₆ + 6O₂ + 6H₂O (in the presence of sunlight and chlorophyll).",
+    "marking_scheme": [
+      "3 marks: one mark for each event in (a).",
+      "1 mark: stomata open at night, CO₂ stored and used in daytime.",
+      "1 mark: correct balanced equation with conditions."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-LA-002",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Transportation in human beings: heart, blood vessels, blood, lymph",
+    "qtype": "la",
+    "marks": 5,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "(a) Describe the path of blood in the human body to show double circulation.\n(b) Why is double circulation needed in humans?\n(c) Name the blood component that helps in clotting.",
+    "answer": "(a) Deoxygenated blood from the body enters the right atrium through the vena cava → right ventricle → pulmonary artery → lungs (oxygenated) → pulmonary vein → left atrium → left ventricle → aorta → body. Blood passes through the heart twice in one complete cycle.\n(b) It keeps oxygenated and deoxygenated blood separate, giving an efficient oxygen supply needed for high energy use and constant body temperature.\n(c) Platelets.",
+    "marking_scheme": [
+      "3 marks: correct path through both circuits (deduct for missing chambers/vessels).",
+      "1 mark: reason for double circulation.",
+      "1 mark: platelets."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-CB-001",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Respiration: aerobic and anaerobic, human respiratory system",
+    "qtype": "case_based",
+    "marks": 4,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nA student added yeast to a sugar solution in a test tube and sealed it with a cork fitted with a bent delivery tube. The other end of the tube dipped into a test tube of lime water. After some time, bubbles came out and the lime water turned milky. The solution also had a faint smell of alcohol.\n(i) Which gas turned the lime water milky? (1)\n(ii) What type of respiration took place in the yeast? (1)\n(iii) Show the pathway of breakdown of glucose in yeast and state where the first step takes place. (2)",
+    "answer": "(i) Carbon dioxide.\n(ii) Anaerobic respiration (fermentation).\n(iii) Glucose (6-carbon) → pyruvate (3-carbon) + energy, in the cytoplasm; then, in the absence of oxygen, pyruvate → ethanol + carbon dioxide + energy.",
+    "marking_scheme": [
+      "1 mark: carbon dioxide.",
+      "1 mark: anaerobic respiration / fermentation.",
+      "1 mark: glucose → pyruvate in cytoplasm.",
+      "1 mark: pyruvate → ethanol + CO₂ (+ energy) without oxygen."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "LP-CB-002",
+    "chapter_id": "life_processes",
+    "chapter": "Life Processes",
+    "topic": "Respiration: aerobic and anaerobic, human respiratory system",
+    "qtype": "case_based",
+    "marks": 4,
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Read the data and answer the questions.\nRiya counted her breaths per minute: at rest – 16; just after 5 minutes of skipping – 28; after resting for 10 minutes – 18.\n(i) Why did her breathing rate increase after skipping? (1)\n(ii) What will happen in her leg muscles if oxygen supply cannot keep up with the demand? (1)\n(iii) Give two features of the alveoli that make gas exchange efficient. (2)",
+    "answer": "(i) Her muscles needed more energy, so more oxygen was required for aerobic respiration and more CO₂ had to be removed.\n(ii) Muscle cells will respire anaerobically, producing lactic acid, which causes cramps.\n(iii) Any two: alveoli give a very large surface area; their walls are very thin; they are surrounded by an extensive network of blood capillaries.",
+    "marking_scheme": [
+      "1 mark: more energy → more oxygen needed.",
+      "1 mark: anaerobic respiration / lactic acid / cramps.",
+      "2 marks: one mark for each correct feature."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-MCQ-001",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Human brain and its parts",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Which part of the human brain maintains the posture and balance of the body?",
+    "options": [
+      "Cerebrum",
+      "Cerebellum",
+      "Medulla",
+      "Pons"
+    ],
+    "answer": "Cerebellum",
+    "explanation": "The cerebellum in the hindbrain controls posture, balance and precision of voluntary actions.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-MCQ-002",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Hormones in animals: endocrine glands and feedback mechanism",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "The hormone that regulates the blood sugar level is:",
+    "options": [
+      "Thyroxin",
+      "Adrenaline",
+      "Insulin",
+      "Growth hormone"
+    ],
+    "answer": "Insulin",
+    "explanation": "Insulin from the pancreas lowers blood sugar.",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-MCQ-003",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Coordination in plants: movement due to growth (tropisms), plant hormones",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "The tendril of a pea plant coils around a stick it touches. This is an example of a growth movement in response to:",
+    "options": [
+      "Light",
+      "Gravity",
+      "Touch",
+      "Water"
+    ],
+    "answer": "Touch",
+    "explanation": "The part of the tendril touching the support grows slower than the part away from it, so it coils around the support.",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-MCQ-004",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Hormones in animals: endocrine glands and feedback mechanism",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Iodised salt is advised in our diet because lack of iodine can cause:",
+    "options": [
+      "Diabetes",
+      "Goitre",
+      "Dwarfism",
+      "Rickets"
+    ],
+    "answer": "Goitre",
+    "explanation": "Iodine is needed to make thyroxin; its deficiency causes goitre (swollen neck).",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-MCQ-005",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Reflex action and reflex arc",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Which of the following is the correct pathway of a reflex arc?",
+    "options": [
+      "Receptor → sensory neuron → spinal cord → motor neuron → effector",
+      "Effector → motor neuron → spinal cord → sensory neuron → receptor",
+      "Receptor → motor neuron → spinal cord → sensory neuron → effector",
+      "Receptor → spinal cord → sensory neuron → motor neuron → effector"
+    ],
+    "answer": "Receptor → sensory neuron → spinal cord → motor neuron → effector",
+    "explanation": "The sensory neuron carries the impulse to the spinal cord, which relays it to a motor neuron that acts on the muscle.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-AR-001",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Coordination in plants: immediate response to stimulus",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Assertion (A): The leaves of the sensitive plant (touch-me-not) fold up quickly when touched.\nReason (R): The plant cells change shape by changing the amount of water in them.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "The quick folding is not growth; it happens because cells lose water and change shape.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-AR-002",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Hormones in animals: endocrine glands and feedback mechanism",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Assertion (A): Adrenaline is called the 'emergency hormone'.\nReason (R): Adrenaline is secreted by the pituitary gland.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Assertion (A) is true, but Reason (R) is false.",
+    "explanation": "Adrenaline prepares the body for emergencies, but it is secreted by the adrenal glands, not the pituitary.",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-VSA-001",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Animals: nervous system, neurons, synapse",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "What is a synapse? How is a nerve impulse passed across it?",
+    "answer": "A synapse is the small gap between the nerve ending of one neuron and the dendrite of the next. The electrical impulse at the nerve ending releases chemicals that cross the gap and start a similar electrical impulse in the next neuron.",
+    "marking_scheme": [
+      "1 mark: definition of synapse.",
+      "1 mark: chemical release crossing the gap."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-VSA-002",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Coordination in plants: movement due to growth (tropisms), plant hormones",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A seedling is placed horizontally. After a few days its root bends downward and its shoot bends upward. Name the stimulus and the type of response shown by the root and the shoot.",
+    "answer": "Stimulus: gravity (geotropism). The root shows positive geotropism (grows towards gravity) and the shoot shows negative geotropism (grows away from gravity).",
+    "marking_scheme": [
+      "1 mark: gravity / geotropism.",
+      "1 mark: root positive and shoot negative geotropism."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-VSA-003",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Hormones in animals: endocrine glands and feedback mechanism",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Explain how a feedback mechanism controls the release of insulin.",
+    "answer": "When the blood sugar level rises, it is detected by cells of the pancreas, which then secrete more insulin. As the blood sugar level falls, insulin secretion is reduced. So the timing and amount of insulin are controlled.",
+    "marking_scheme": [
+      "1 mark: rise in sugar → more insulin.",
+      "1 mark: fall in sugar → less insulin."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-SA-001",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Human brain and its parts",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "State one function each of the following parts of the human brain: (a) cerebrum (b) medulla (c) cerebellum.",
+    "answer": "(a) Cerebrum: thinking, memory, and voluntary actions; receives sensory information.\n(b) Medulla: controls involuntary actions such as blood pressure, salivation and vomiting.\n(c) Cerebellum: maintains posture and balance; precision of voluntary actions.",
+    "marking_scheme": [
+      "1 mark each for a correct function of each part."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-SA-002",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Reflex action and reflex arc",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Aman accidentally touches a very hot pan and pulls his hand away even before he feels the pain.\n(a) What is this kind of response called?\n(b) Why does it happen before the brain becomes aware?\n(c) How is such a response useful to us?",
+    "answer": "(a) Reflex action.\n(b) The reflex arc is formed in the spinal cord, where the sensory neuron connects to the motor neuron directly; the information reaches the brain later.\n(c) It gives a very quick response that protects the body from harm, since thinking in the brain takes more time.",
+    "marking_scheme": [
+      "1 mark: reflex action.",
+      "1 mark: reflex arc in spinal cord.",
+      "1 mark: quick response protects from danger."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-LA-001",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Coordination in plants: movement due to growth (tropisms), plant hormones",
+    "qtype": "la",
+    "marks": 5,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) What are plant hormones?\n(b) Name four plant hormones and state one function of each.",
+    "answer": "(a) Plant hormones are chemical compounds that coordinate growth, development and responses to the environment in plants.\n(b) Auxin – helps cells to grow longer; causes bending of shoot towards light.\nGibberellins – help in the growth of the stem.\nCytokinins – promote cell division (found in fruits and seeds).\nAbscisic acid – inhibits growth; causes wilting of leaves.",
+    "marking_scheme": [
+      "1 mark: definition.",
+      "4 marks: one mark for each hormone with a correct function."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "CC-CB-001",
+    "chapter_id": "control_coordination",
+    "chapter": "Control and Coordination",
+    "topic": "Hormones in animals: endocrine glands and feedback mechanism",
+    "qtype": "case_based",
+    "marks": 4,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nA doctor examined a 9-year-old boy who was much shorter than other children of his age. Tests showed that one of his endocrine glands was producing too little of a particular hormone.\n(i) Name the gland that secretes growth hormone. (1)\n(ii) What happens if this hormone is secreted in excess during childhood? (1)\n(iii) Name the hormones responsible for changes at puberty in boys and in girls, and the glands that secrete them. (2)",
+    "answer": "(i) Pituitary gland.\n(ii) Gigantism (very tall body).\n(iii) Boys: testosterone from the testes. Girls: oestrogen from the ovaries.",
+    "marking_scheme": [
+      "1 mark: pituitary.",
+      "1 mark: gigantism.",
+      "1 mark: testosterone – testes.",
+      "1 mark: oestrogen – ovaries."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-MCQ-001",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Modes of reproduction used by single organisms: fission, fragmentation, regeneration, budding, vegetative propagation, spore formation",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Binary fission is a mode of reproduction in:",
+    "options": [
+      "Hydra",
+      "Amoeba",
+      "Planaria",
+      "Rhizopus"
+    ],
+    "answer": "Amoeba",
+    "explanation": "Amoeba divides into two equal halves by binary fission.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-MCQ-002",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Modes of reproduction used by single organisms: fission, fragmentation, regeneration, budding, vegetative propagation, spore formation",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "In which organism does a new individual develop as an outgrowth that later detaches from the parent?",
+    "options": [
+      "Hydra",
+      "Plasmodium",
+      "Spirogyra",
+      "Planaria"
+    ],
+    "answer": "Hydra",
+    "explanation": "Hydra reproduces by budding.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-MCQ-003",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Sexual reproduction in flowering plants",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "After fertilisation in a flower, the fruit develops from the:",
+    "options": [
+      "Ovule",
+      "Ovary",
+      "Stigma",
+      "Anther"
+    ],
+    "answer": "Ovary",
+    "explanation": "The ovary ripens into the fruit, while the ovules become seeds.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-MCQ-004",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Modes of reproduction used by single organisms: fission, fragmentation, regeneration, budding, vegetative propagation, spore formation",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A gardener wants to quickly grow many rose plants with exactly the same flower colour as one parent plant. The best method is:",
+    "options": [
+      "growing plants from its seeds",
+      "vegetative propagation using stem cuttings",
+      "cross-pollination with another rose plant",
+      "spore formation"
+    ],
+    "answer": "vegetative propagation using stem cuttings",
+    "explanation": "Vegetative propagation produces plants genetically similar to the parent, and they flower sooner.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-MCQ-005",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Reproduction in human beings: changes at puberty, male and female reproductive systems",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "Which of the following is NOT a function of the placenta?",
+    "options": [
+      "Supplying glucose and oxygen from the mother to the embryo",
+      "Passing wastes from the embryo to the mother's blood",
+      "Acting as the site of fertilisation",
+      "Providing a large surface area for exchange through its villi"
+    ],
+    "answer": "Acting as the site of fertilisation",
+    "explanation": "Fertilisation takes place in the oviduct, not in the placenta.",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-AR-001",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Do organisms create exact copies of themselves? DNA copying and variation",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Assertion (A): Variation is useful for the survival of a species over time.\nReason (R): Some variations help individuals to survive when the environment changes.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "If the environment changes, individuals with suitable variations survive, so the species survives.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-AR-002",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Reproduction in human beings: changes at puberty, male and female reproductive systems",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Assertion (A): In human beings, fertilisation takes place in the uterus.\nReason (R): The zygote gets implanted in the thick lining of the uterus.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Assertion (A) is false, but Reason (R) is true.",
+    "explanation": "Fertilisation occurs in the oviduct (fallopian tube); the embryo is then implanted in the uterus.",
+    "marking_scheme": [
+      "1 mark for the correct option (d)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-VSA-001",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Sexual reproduction in flowering plants",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Distinguish between self-pollination and cross-pollination.",
+    "answer": "Self-pollination: transfer of pollen from the anther to the stigma of the same flower (or another flower of the same plant). Cross-pollination: transfer of pollen from the anther of one flower to the stigma of a flower on a different plant of the same kind.",
+    "marking_scheme": [
+      "1 mark: self-pollination.",
+      "1 mark: cross-pollination."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-VSA-002",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Do organisms create exact copies of themselves? DNA copying and variation",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Why is DNA copying an essential part of reproduction?",
+    "answer": "DNA carries the information for making proteins and hence the body design. Copying DNA ensures that each new cell gets the same blueprint, so the offspring resembles the parent; small copying errors give rise to variation.",
+    "marking_scheme": [
+      "1 mark: DNA carries information for body design / proteins.",
+      "1 mark: copies passed to new cells; slight variations."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-VSA-003",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Reproductive health",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Name two methods to avoid pregnancy. Which type of method also protects against sexually transmitted diseases, and why?",
+    "answer": "Any two: condoms (barrier), oral pills (hormonal), copper-T (loop), surgical methods (vasectomy/tubectomy). Barrier methods such as condoms also protect against sexually transmitted diseases like HIV-AIDS and gonorrhoea, because they prevent contact between body fluids.",
+    "marking_scheme": [
+      "1 mark: any two methods.",
+      "1 mark: barrier method prevents transmission of STDs."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-SA-001",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Modes of reproduction used by single organisms: fission, fragmentation, regeneration, budding, vegetative propagation, spore formation",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "What is regeneration? Explain it with the example of Planaria. Why can complex organisms not produce new individuals by regeneration?",
+    "answer": "Regeneration is the ability of an organism to give rise to new individual organisms from its body parts. If Planaria is cut into pieces, each piece grows into a complete organism; specialised cells divide and change into various cell types and tissues. Complex organisms have highly specialised cells, tissues and organs, so a body part cannot form the whole organism.",
+    "marking_scheme": [
+      "1 mark: definition.",
+      "1 mark: Planaria example.",
+      "1 mark: reason for complex organisms."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-SA-002",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Reproduction in human beings: changes at puberty, male and female reproductive systems",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A class 8 student asks why her body and her brother's body are changing. Write (a) two changes common to boys and girls at puberty, (b) one change seen only in boys, (c) one change seen only in girls.",
+    "answer": "(a) Any two: thick hair grows in the armpits and genital area; thinner hair on legs, arms and face; skin becomes oily and pimples may appear.\n(b) Any one: growth of facial hair (moustache, beard); voice begins to crack.\n(c) Any one: breast size increases; menstruation begins.",
+    "marking_scheme": [
+      "1 mark: two common changes.",
+      "1 mark: one change in boys.",
+      "1 mark: one change in girls."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-LA-001",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "What happens when the egg is not fertilised",
+    "qtype": "la",
+    "marks": 5,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) Describe the female reproductive system of human beings, giving the function of the ovaries, oviducts and uterus.\n(b) What happens when the egg is not fertilised?",
+    "answer": "(a) Ovaries: a pair of organs that produce eggs (one egg every month after puberty) and hormones (oestrogen). Oviducts (fallopian tubes): carry the egg from the ovary to the uterus; fertilisation takes place here. Uterus: the bag-like organ in which the embryo is implanted and develops; it opens into the vagina through the cervix.\n(b) The egg lives for about one day. The uterus lining, which became thick and spongy to receive a fertilised egg, is not needed; it slowly breaks down and comes out through the vagina as blood and mucus. This is menstruation and occurs roughly every month, lasting about 2 to 8 days.",
+    "marking_scheme": [
+      "3 marks: one mark each for ovaries, oviducts, uterus with functions.",
+      "2 marks: breakdown of thickened lining (1) and menstruation (1)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-LA-002",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Sexual reproduction in flowering plants",
+    "qtype": "la",
+    "marks": 5,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Describe sexual reproduction in flowering plants under these headings: (a) pollination (b) fertilisation (c) changes after fertilisation.",
+    "answer": "(a) Pollination: transfer of pollen grains from the anther to the stigma, by wind, water or animals; it can be self- or cross-pollination.\n(b) Fertilisation: the pollen grain on the stigma grows a pollen tube through the style to reach the ovule in the ovary. The male germ cell fuses with the female germ cell to form a zygote.\n(c) The zygote divides to form the embryo; the ovule develops a tough coat and becomes the seed; the ovary grows and ripens into the fruit; petals, sepals, stamens, style and stigma shrivel and fall off.",
+    "marking_scheme": [
+      "2 marks: pollination (definition + agents/types).",
+      "2 marks: pollen tube and fusion of germ cells.",
+      "1 mark: seed and fruit formation."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "RP-CB-001",
+    "chapter_id": "reproduction",
+    "chapter": "How do Organisms Reproduce?",
+    "topic": "Modes of reproduction used by single organisms: fission, fragmentation, regeneration, budding, vegetative propagation, spore formation",
+    "qtype": "case_based",
+    "marks": 4,
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nMeena kept a moist slice of bread in a warm, dark cupboard. After four days she saw white cotton-like threads on it with tiny black dots at the tips. A dry slice kept beside it showed no such growth.\n(i) Name the organism growing on the bread. (1)\n(ii) What are the black dots and what is their role? (1)\n(iii) Why did the organism grow only on the moist slice, and how are the black dots suited for spreading the organism? (2)",
+    "answer": "(i) Rhizopus (bread mould).\n(ii) Sporangia; they contain spores that develop into new Rhizopus individuals.\n(iii) Spores need moisture (and nutrients) to germinate and grow, which the dry slice did not provide. Spores are produced in large numbers and are covered by thick walls that protect them until they reach a moist surface.",
+    "marking_scheme": [
+      "1 mark: Rhizopus.",
+      "1 mark: sporangia containing spores.",
+      "1 mark: need of moisture.",
+      "1 mark: thick walls / large numbers."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-MCQ-001",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Sex determination",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "In human beings, the sex of the child is determined by:",
+    "options": [
+      "the sex chromosome inherited from the father",
+      "the sex chromosome inherited from the mother",
+      "the temperature at which the embryo develops",
+      "the age of the mother"
+    ],
+    "answer": "the sex chromosome inherited from the father",
+    "explanation": "All eggs carry an X chromosome; the sperm carries either X or Y, so the father's chromosome decides.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-MCQ-002",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A pure tall pea plant (TT) is crossed with a pure short pea plant (tt). What percentage of the F1 plants will be tall?",
+    "options": [
+      "25%",
+      "50%",
+      "75%",
+      "100%"
+    ],
+    "answer": "100%",
+    "explanation": "All F1 plants are Tt; T is dominant, so all are tall.",
+    "marking_scheme": [
+      "1 mark for the correct option (d)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-MCQ-003",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "When two Tt pea plants are crossed, the genotypic ratio of the offspring is:",
+    "options": [
+      "3 : 1",
+      "1 : 2 : 1",
+      "9 : 3 : 3 : 1",
+      "1 : 1"
+    ],
+    "answer": "1 : 2 : 1",
+    "explanation": "TT : Tt : tt = 1 : 2 : 1 (the phenotypic ratio is 3 : 1).",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-AR-001",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "How do these traits get expressed",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "Assertion (A): A trait can be inherited by a child without being expressed in the child.\nReason (R): A recessive trait is expressed only when both copies of the gene are recessive.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "A child with one recessive copy (e.g. Tt) carries the trait but does not show it.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-VSA-001",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "What are dominant and recessive traits? Give one example of each from Mendel's experiments.",
+    "answer": "A dominant trait is expressed even when only one copy of its gene is present; a recessive trait is expressed only when both copies are recessive. Example: tallness (dominant) and shortness (recessive) in pea plants.",
+    "marking_scheme": [
+      "1 mark: both definitions.",
+      "1 mark: correct example."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-VSA-002",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "How do these traits get expressed",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A father has blood group B and the mother has blood group O. Their only son has blood group O. Can we conclude from this which of the two traits is dominant? Give a reason.",
+    "answer": "No. This is information from just one child, and we do not know the full genetic makeup of the father; he could carry a gene for O along with B. Data from a large number of offspring is needed to decide dominance.",
+    "marking_scheme": [
+      "1 mark: No.",
+      "1 mark: too little data / father's genotype unknown."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-SA-001",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Sex determination",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Explain how the sex of a child is determined in human beings.",
+    "answer": "Women have a perfect pair of sex chromosomes (XX) while men have a mismatched pair (XY). All eggs from the mother carry an X chromosome. Half the sperms carry X and half carry Y. If a sperm with X fertilises the egg, the child is a girl (XX); if a sperm with Y fertilises it, the child is a boy (XY). So the sex is decided by the father's sperm.",
+    "marking_scheme": [
+      "1 mark: XX in women, XY in men.",
+      "1 mark: eggs carry X, sperms carry X or Y.",
+      "1 mark: outcome of fertilisation."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-SA-002",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "In pea plants, round seed (R) is dominant over wrinkled seed (r). A plant with round seeds was crossed with a plant with wrinkled seeds. Half the offspring had round seeds and half had wrinkled seeds.\n(a) What was the genotype of the round-seeded parent?\n(b) Show the cross.\n(c) What would the offspring be if the round parent had been pure (RR)?",
+    "answer": "(a) Rr.\n(b) Rr × rr → gametes R, r and r → offspring Rr (round) : rr (wrinkled) = 1 : 1.\n(c) All offspring would be Rr, i.e. all round.",
+    "marking_scheme": [
+      "1 mark: Rr.",
+      "1 mark: correct cross with 1:1 ratio.",
+      "1 mark: all round."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-LA-001",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+    "qtype": "la",
+    "marks": 5,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "Mendel crossed pea plants having round yellow seeds (RRYY) with plants having wrinkled green seeds (rryy).\n(a) What were the F1 plants like? Give their genotype.\n(b) Write the phenotypes and their ratio in the F2 generation.\n(c) What conclusion did Mendel draw from this experiment?",
+    "answer": "(a) All F1 plants had round yellow seeds; genotype RrYy.\n(b) Round yellow : round green : wrinkled yellow : wrinkled green = 9 : 3 : 3 : 1.\n(c) The traits for seed shape and seed colour are inherited independently of each other; new combinations (round green, wrinkled yellow) appear in F2.",
+    "marking_scheme": [
+      "1 mark: F1 phenotype; 1 mark: genotype RrYy.",
+      "2 marks: four phenotypes with 9:3:3:1.",
+      "1 mark: independent inheritance."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "HD-CB-001",
+    "chapter_id": "heredity",
+    "chapter": "Heredity",
+    "topic": "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+    "qtype": "case_based",
+    "marks": 4,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nIn a school garden, students crossed pure violet-flowered pea plants with pure white-flowered pea plants. All the F1 plants had violet flowers. When the F1 plants were self-pollinated, the F2 generation had 300 violet-flowered and 100 white-flowered plants.\n(i) Which trait is dominant? (1)\n(ii) Write the genotype of the F1 plants using suitable symbols. (1)\n(iii) Out of the 300 violet-flowered F2 plants, how many are expected to be pure (homozygous)? Explain. (2)",
+    "answer": "(i) Violet flower colour.\n(ii) Vv.\n(iii) About 100. The F2 genotypic ratio is VV : Vv : vv = 1 : 2 : 1, so one-third of the violet plants (VV) are pure: 1/3 × 300 = 100.",
+    "marking_scheme": [
+      "1 mark: violet.",
+      "1 mark: Vv.",
+      "1 mark: 1:2:1 ratio.",
+      "1 mark: answer 100."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-MCQ-001",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "Managing the garbage we produce",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Which of the following is biodegradable?",
+    "options": [
+      "Polythene bag",
+      "Vegetable peels",
+      "Glass bottle",
+      "Aluminium foil"
+    ],
+    "answer": "Vegetable peels",
+    "explanation": "Vegetable peels can be broken down by decomposers.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-MCQ-002",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "Food chains and webs, trophic levels, 10 percent law",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "In the food chain grass → grasshopper → frog → snake, the grass has stored 10,000 J of energy. According to the 10 percent law, how much energy will be available to the snake?",
+    "options": [
+      "1000 J",
+      "100 J",
+      "10 J",
+      "1 J"
+    ],
+    "answer": "10 J",
+    "explanation": "10,000 → 1,000 (grasshopper) → 100 (frog) → 10 J (snake).",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-MCQ-003",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "How do our activities affect the environment: ozone layer depletion",
+    "qtype": "mcq",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "The thinning of the ozone layer is mainly linked to the use of:",
+    "options": [
+      "Carbon dioxide",
+      "Chlorofluorocarbons (CFCs)",
+      "Nitrogen",
+      "Water vapour"
+    ],
+    "answer": "Chlorofluorocarbons (CFCs)",
+    "explanation": "CFCs used in refrigerants and fire extinguishers damage the ozone layer.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-AR-001",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "Biological magnification",
+    "qtype": "assertion_reason",
+    "marks": 1,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): The concentration of pesticides is highest in organisms at the top of a food chain.\nReason (R): Pesticides are not broken down and accumulate progressively at each trophic level.",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "This is biological magnification; non-biodegradable chemicals build up along the food chain.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-VSA-001",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "Ecosystem and its components",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Give two reasons why decomposers are important in an ecosystem.",
+    "answer": "Decomposers break down dead remains and wastes of organisms into simpler substances. These substances go back into the soil and are used again by plants, so nutrients are recycled and the environment is kept clean.",
+    "marking_scheme": [
+      "1 mark: breakdown of dead remains / wastes.",
+      "1 mark: recycling of nutrients into the soil."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-VSA-002",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "How do our activities affect the environment: ozone layer depletion",
+    "qtype": "vsa",
+    "marks": 2,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "How is ozone formed in the upper atmosphere, and why is it important for life on Earth?",
+    "answer": "High-energy ultraviolet (UV) radiation splits oxygen molecules (O₂) into free oxygen atoms, which combine with O₂ to form ozone (O₃). The ozone layer shields the Earth from harmful UV radiation, which can cause skin cancer.",
+    "marking_scheme": [
+      "1 mark: formation of ozone.",
+      "1 mark: protection from UV radiation."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-SA-001",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "Managing the garbage we produce",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Your school produces a lot of waste every day. Suggest three practical steps the school can take to reduce and manage its garbage.",
+    "answer": "Any three: (1) Keep separate bins for biodegradable and non-biodegradable waste. (2) Compost canteen and garden waste. (3) Avoid single-use plastic; use steel bottles and cloth bags. (4) Send paper and plastic for recycling. (5) Reuse paper by writing on both sides.",
+    "marking_scheme": [
+      "1 mark each for three practical, relevant steps."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-SA-002",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "Food chains and webs, trophic levels, 10 percent law",
+    "qtype": "sa",
+    "marks": 3,
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) Why are food chains usually limited to three or four trophic levels?\n(b) Why is a vegetarian diet considered more energy-efficient than a non-vegetarian diet?",
+    "answer": "(a) Only about 10% of the energy is passed on from one trophic level to the next; the rest is used in life processes or lost as heat. After three or four levels, too little energy is left to support another level.\n(b) A vegetarian eats at the second trophic level (directly from producers) and so gets more of the energy captured by plants than when eating animals at a higher level.",
+    "marking_scheme": [
+      "2 marks: 10% transfer and too little energy after 3–4 levels.",
+      "1 mark: vegetarians at second trophic level get more energy."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  },
+  {
+    "id": "OE-CB-001",
+    "chapter_id": "our_environment",
+    "chapter": "Our Environment",
+    "topic": "Biological magnification",
+    "qtype": "case_based",
+    "marks": 4,
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Read the data and answer the questions.\nScientists measured the amount of a pesticide (in parts per million, ppm) in a lake ecosystem: water 0.02; tiny water animals 0.04; small fish 0.5; large fish 2; fish-eating birds 25.\n(i) Name the phenomenon shown by this data. (1)\n(ii) Why do the fish-eating birds have the highest concentration? (1)\n(iii) Suggest two measures to reduce this problem. (2)",
+    "answer": "(i) Biological magnification.\n(ii) The birds are at the highest trophic level; the pesticide is non-biodegradable and accumulates at every level of the food chain.\n(iii) Any two: use bio-pesticides or organic farming; use chemical pesticides only in the recommended amounts; ban harmful pesticides; stop farm runoff from entering water bodies.",
+    "marking_scheme": [
+      "1 mark: biological magnification.",
+      "1 mark: top trophic level / accumulation.",
+      "2 marks: one mark for each measure."
+    ],
+    "status": "approved",
+    "source": "ai",
+    "created_at": "2026-10-23T15:44:35+00:00",
+    "last_used_in_paper": null
+  }
+]
