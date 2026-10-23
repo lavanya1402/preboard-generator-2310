@@ -24,6 +24,12 @@
 
 **Live app:** _coming soon (link added after deployment)_
 
+## Screenshots
+
+| Generate a paper | The generated question paper |
+|---|---|
+| ![Generate paper form with school name, exam name, date, duration and seed](docs/screenshots/generate-form.png) | ![Generated question paper with school header and Section A questions](docs/screenshots/question-paper.png) |
+
 ---
 
 ## The problem → the solution
