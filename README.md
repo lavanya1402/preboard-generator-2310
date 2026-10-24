@@ -22,7 +22,7 @@
 
 ## Live demo
 
-**Live app:** _coming soon (link added after deployment)_
+**Live app:** [https://preboard-generator-2310-qpmeqm9tvb8cqjj2svebav.streamlit.app](https://preboard-generator-2310-qpmeqm9tvb8cqjj2svebav.streamlit.app) (password-protected – demo on request)
 
 ## Screenshots
 
