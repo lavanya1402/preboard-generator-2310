@@ -10,6 +10,13 @@ INK = (31, 79, 209)
 TEXT = (27, 42, 74)
 MUTED = (95, 107, 133)
 LETTERS = "abcd"
+AR_INSTRUCTION = ("The following question(s) consist of two statements – Assertion (A) and Reason (R). "
+                  "Answer by selecting the appropriate option.")
+
+
+def subject_line(paper):
+    subjects = set(paper["summary"].get("subject_marks", {})) or {"biology"}
+    return "Science (Biology)" if subjects == {"biology"} else "Science"
 
 
 class PaperPDF(FPDF):
@@ -58,7 +65,7 @@ def header_block(pdf, meta, paper, subtitle=None):
     pdf.set_font("DejaVu", "B", 12)
     pdf.multi_cell(0, 6, meta["exam"], align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.set_font("DejaVu", "", 10.5)
-    pdf.cell(0, 6, "Class X  ·  Science (Biology)", align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.cell(0, 6, f"Class X  ·  {subject_line(paper)}", align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     if subtitle:
         pdf.set_font("DejaVu", "B", 11)
         pdf.set_text_color(*INK)
@@ -118,17 +125,34 @@ def question_paper_pdf(paper, meta):
     for i, line in enumerate(paper["general_instructions"], 1):
         pdf.set_x(pdf.l_margin + 4)
         pdf.multi_cell(pdf.epw - 4, 5, f"{i}. {line}", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-    current = None
+    current, prev_type = None, None
     for q in paper["questions"]:
         if q["section"] != current:
-            current = q["section"]
+            current, prev_type = q["section"], None
             section_heading(pdf, current, paper["section_labels"][current])
-        options = [f"({l}) {o}" for l, o in zip(LETTERS, q.get("options") or [])]
+        if q["qtype"] == "assertion_reason" and prev_type != "assertion_reason":
+            keep_together(pdf, 30)
+            indented(pdf, AR_INSTRUCTION, indent=0, size=9.5, color=MUTED)
+            for letter, option in zip(LETTERS, q["options"]):
+                indented(pdf, f"({letter}) {option}", indent=6, size=9.5, color=MUTED)
+            pdf.ln(1.5)
+        prev_type = q["qtype"]
+        ar = q["qtype"] == "assertion_reason"  # options already listed once above
+        options = [] if ar else [f"({l}) {o}" for l, o in zip(LETTERS, q.get("options") or [])]
+        alt = q.get("alternative")
+        alt_options = [f"({l}) {o}" for l, o in zip(LETTERS, (alt or {}).get("options") or [])]
         keep_together(pdf, text_height(pdf, pdf.epw - 23, 5.5, q["question"], 10)
-                      + sum(text_height(pdf, pdf.epw - 29, 5.2, o, 10) for o in options) + 2.5)
+                      + sum(text_height(pdf, pdf.epw - 29, 5.2, o, 10) for o in options) + 2.5
+                      + (text_height(pdf, pdf.epw - 23, 5.5, alt["question"], 10) + 8 if alt else 0))
         numbered_block(pdf, f"Q{q['number']}", q["question"], q["marks"])
         for option in options:
             indented(pdf, option, indent=17)
+        if alt:
+            pdf.set_font("DejaVu", "B", 10)
+            pdf.cell(0, 6, "OR", align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            indented(pdf, alt["question"])
+            for option in alt_options:
+                indented(pdf, option, indent=17)
         pdf.ln(2.5)
     pdf.ln(4)
     pdf.set_font("DejaVu", "B", 10)
@@ -146,15 +170,25 @@ def answer_key_pdf(paper, meta):
         if q["section"] != current:
             current = q["section"]
             section_heading(pdf, current, paper["section_labels"][current])
-        answer = f"({a['option']}) {a['answer']}" if a.get("option") else a["answer"]
-        steps = [f"• {step}" for step in a["marking_scheme"]]
-        keep_together(pdf, text_height(pdf, pdf.epw - 23, 5.5, answer, 10)
-                      + text_height(pdf, pdf.epw - 23, 5.2, a.get("explanation") or "", 9)
-                      + sum(text_height(pdf, pdf.epw - 26, 5.2, st, 9) for st in steps) + 2.5)
-        numbered_block(pdf, f"Q{a['number']}", answer, a["marks"])
-        if a.get("explanation"):
-            indented(pdf, a["explanation"], size=9, color=MUTED)
-        for step in steps:
-            indented(pdf, step, indent=14, size=9)
+        parts = [a] + ([a["alternative"]] if a.get("alternative") else [])
+        height = 2.5
+        for part in parts:
+            answer = f"({part['option']}) {part['answer']}" if part.get("option") else part["answer"]
+            height += (text_height(pdf, pdf.epw - 23, 5.5, answer, 10)
+                       + text_height(pdf, pdf.epw - 23, 5.2, part.get("explanation") or "", 9)
+                       + sum(text_height(pdf, pdf.epw - 26, 5.2, f"• {st}", 9) for st in part["marking_scheme"]) + 6)
+        keep_together(pdf, height)
+        for i, part in enumerate(parts):
+            answer = f"({part['option']}) {part['answer']}" if part.get("option") else part["answer"]
+            if i == 0:
+                numbered_block(pdf, f"Q{a['number']}", answer, a["marks"])
+            else:
+                pdf.set_font("DejaVu", "B", 10)
+                pdf.cell(0, 6, "OR", align="C", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+                indented(pdf, answer)
+            if part.get("explanation"):
+                indented(pdf, part["explanation"], size=9, color=MUTED)
+            for step in part["marking_scheme"]:
+                indented(pdf, f"• {step}", indent=14, size=9)
         pdf.ln(2.5)
     return bytes(pdf.output())

@@ -1,0 +1,55 @@
+{
+  "title": "Class 10 Science – Full Paper (Board 2027 pattern)",
+  "session": "2026-27",
+  "total_marks": 80,
+  "total_questions": 39,
+  "duration": "3 Hours",
+  "verified": true,
+  "source": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/Science-SQP.pdf",
+  "note": "Question types, sections and internal choices copied from the official CBSE 2026-27 Science SQP (Code 086). Chapter marks follow the SQP's own split (see pattern_report).",
+  "section_titles": {"A": "Biology", "B": "Chemistry", "C": "Physics"},
+  "sections": [
+    {"section": "A", "subject": "biology", "qtype": "mcq", "label": "Multiple Choice Questions", "count": 7, "marks_each": 1, "choice": 0},
+    {"section": "A", "subject": "biology", "qtype": "assertion_reason", "label": "Assertion–Reason Questions", "count": 2, "marks_each": 1, "choice": 0},
+    {"section": "A", "subject": "biology", "qtype": "vsa", "label": "Very Short Answer Questions", "count": 3, "marks_each": 2, "choice": 1},
+    {"section": "A", "subject": "biology", "qtype": "sa", "label": "Short Answer Questions", "count": 2, "marks_each": 3, "choice": 0},
+    {"section": "A", "subject": "biology", "qtype": "case_based", "label": "Case-Based Question", "count": 1, "marks_each": 4, "choice": 0},
+    {"section": "A", "subject": "biology", "qtype": "la", "label": "Long Answer Question", "count": 1, "marks_each": 5, "choice": 1},
+
+    {"section": "B", "subject": "chemistry", "qtype": "mcq", "label": "Multiple Choice Questions", "count": 7, "marks_each": 1, "choice": 0},
+    {"section": "B", "subject": "chemistry", "qtype": "assertion_reason", "label": "Assertion–Reason Question", "count": 1, "marks_each": 1, "choice": 0},
+    {"section": "B", "subject": "chemistry", "qtype": "vsa", "label": "Very Short Answer Question", "count": 1, "marks_each": 2, "choice": 0},
+    {"section": "B", "subject": "chemistry", "qtype": "sa", "label": "Short Answer Questions", "count": 2, "marks_each": 3, "choice": 1},
+    {"section": "B", "subject": "chemistry", "qtype": "case_based", "label": "Case-Based Question", "count": 1, "marks_each": 4, "choice": 0},
+    {"section": "B", "subject": "chemistry", "qtype": "la", "label": "Long Answer Question", "count": 1, "marks_each": 5, "choice": 1},
+
+    {"section": "C", "subject": "physics", "qtype": "mcq", "label": "Multiple Choice Questions", "count": 2, "marks_each": 1, "choice": 0},
+    {"section": "C", "subject": "physics", "qtype": "assertion_reason", "label": "Assertion–Reason Question", "count": 1, "marks_each": 1, "choice": 0},
+    {"section": "C", "subject": "physics", "qtype": "vsa", "label": "Very Short Answer Questions", "count": 2, "marks_each": 2, "choice": 1},
+    {"section": "C", "subject": "physics", "qtype": "sa", "label": "Short Answer Questions", "count": 3, "marks_each": 3, "choice": 0},
+    {"section": "C", "subject": "physics", "qtype": "case_based", "label": "Case-Based Question", "count": 1, "marks_each": 4, "choice": 0},
+    {"section": "C", "subject": "physics", "qtype": "la", "label": "Long Answer Question", "count": 1, "marks_each": 5, "choice": 1}
+  ],
+  "chapter_marks": {
+    "life_processes": 11,
+    "control_coordination": 5,
+    "reproduction": 4,
+    "heredity": 5,
+    "our_environment": 5,
+    "chemical_reactions": 7,
+    "acids_bases_salts": 6,
+    "metals_non_metals": 5,
+    "carbon_compounds": 7,
+    "light_reflection_refraction": 7,
+    "human_eye": 5,
+    "electricity": 6,
+    "magnetic_effects": 7
+  },
+  "difficulty_mix": {"easy": 0.3, "medium": 0.5, "hard": 0.2},
+  "competency_based_target": 0.5,
+  "general_instructions": [
+    "This question paper consists of 39 questions in 3 sections. Section A is Biology, Section B is Chemistry and Section C is Physics.",
+    "All questions are compulsory. However, an internal choice is provided in some questions. A student is expected to attempt only one of the alternatives in these questions.",
+    "Each section has multiple choice and assertion–reason questions of 1 mark, short answer questions of 2 and 3 marks, a case-based question of 4 marks and a long answer question of 5 marks."
+  ]
+}

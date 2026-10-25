@@ -52,6 +52,11 @@ def chapter_names():
 
 
 @st.cache_data(ttl=300, show_spinner=False)
+def chapter_subjects():
+    return storage.chapter_subjects()
+
+
+@st.cache_data(ttl=300, show_spinner=False)
 def syllabus_topics():
     return {c["chapter_id"]: c["topics"] for c in storage.get_syllabus()["chapters"]}
 

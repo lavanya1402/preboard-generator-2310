@@ -8,6 +8,7 @@ ui.page_header("Question bank", "Search every question – approved, pending and
 
 questions = ui.all_questions()
 names = ui.chapter_names()
+subjects = ui.chapter_subjects()
 
 c1, c2, c3, c4 = st.columns(4)
 c1.metric("Total questions", len(questions), border=True)
@@ -34,7 +35,7 @@ rows = [q for q in questions
 
 st.caption(f"{len(rows)} question(s) found. Click a row to see the full question.")
 table = pd.DataFrame([{
-    "ID": q["id"], "Chapter": q["chapter"], "Type": ui.QTYPE_LABELS[q["qtype"]], "Marks": q["marks"],
+    "ID": q["id"], "Subject": subjects.get(q["chapter_id"], "biology").title(), "Chapter": q["chapter"], "Type": ui.QTYPE_LABELS[q["qtype"]], "Marks": q["marks"],
     "Difficulty": q["difficulty"], "Status": q.get("status"), "Source": q.get("source"),
     "Last used": q.get("last_used_in_paper") or "", "Question": q["question"].replace("\n", " "),
 } for q in rows])

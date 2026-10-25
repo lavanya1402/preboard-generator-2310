@@ -22,10 +22,11 @@ def main():
     parser.add_argument("--seed", type=int, default=None, help="same seed gives the same paper")
     parser.add_argument("--save", help="also save paper + answer key to this text file")
     parser.add_argument("--no-record", action="store_true", help="do not record last_used_in_paper")
+    parser.add_argument("--paper", default=None, help="paper type: biology_30 (default) or science_80")
     args = parser.parse_args()
 
     try:
-        paper = papers.generate_paper(args.seed, record=not args.no_record)
+        paper = papers.generate_paper(args.seed, record=not args.no_record, paper_type=args.paper)
     except ValueError as e:
         sys.exit(f"Could not make a paper: {e}")
     paper_text, key_text = papers.render_text(paper)

@@ -9,7 +9,7 @@ step-wise marking scheme, and save them as **pending** for the teacher to review
 **Inputs** (ask the teacher if one is missing):
 | Input | Values |
 |---|---|
-| chapter | Life Processes · Control and Coordination · How do Organisms Reproduce? · Heredity · Our Environment |
+| chapter | **Biology:** Life Processes · Control and Coordination · How do Organisms Reproduce? · Heredity · Our Environment<br>**Chemistry:** Chemical Reactions and Equations · Acids, Bases and Salts · Metals and Non-metals · Carbon and its Compounds<br>**Physics:** Light – Reflection and Refraction · The Human Eye and the Colourful World · Electricity · Magnetic Effects of Electric Current |
 | type | mcq · assertion_reason · vsa (2 marks) · sa (3) · la (5) · case_based (4) – or "mixed" |
 | count | how many (max 15 per run, so the teacher can review comfortably) |
 | difficulty | easy · medium · hard · mixed (default medium) |
@@ -45,6 +45,12 @@ Rules:
   automatically with the standard CBSE wording; give `answer` as the letter "a"–"d"; add `explanation`.
 - **vsa / sa / la / case_based:** no options. Marks are fixed: vsa 2, sa 3, la 5, case_based 4.
   Show sub-part marks in brackets in the question.
+- **case_based (Board 2027 style):** passage, then A (1) and B (1), then the line
+  "Attempt either sub-part C or D." with C (2) **OR** D (2). Give answers for A, B, C and D.
+- **Numericals (Physics/Chemistry):** use realistic values, SI units, and show each step of the
+  working in the marking scheme. Balanced chemical equations with state symbols where useful.
+- OR choices for whole questions (2/3/5 marks) are added automatically by the app from two
+  questions of the same type – just write good single questions.
 - **marking_scheme:** a list of steps, each starting with the marks, e.g. `"1 mark: names the gland."`.
   The steps must add up to the question's marks.
 - `competency_based`: true for case/data/experiment/application/assertion-reason, false for direct recall.

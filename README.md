@@ -51,6 +51,13 @@
 5. **Teacher review** – approve, edit or reject each question in the app.
 6. **Generate** – one click builds the paper from approved questions only, with a question paper PDF (school header), an answer key PDF and an analysis of marks per chapter.
 
+## Paper types
+
+| Paper type | Questions | Marks | Pattern |
+|---|---|---|---|
+| **Full Science – Board 2027 pattern** (`science_80`) | 39 | 80 | Exactly as the official [CBSE 2026-27 Science SQP](https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/Science-SQP.pdf): Section A Biology (16 Q, 30 marks), Section B Chemistry (13 Q, 25 marks), Section C Physics (10 Q, 25 marks), internal choices (OR) in the same places |
+| **Biology preboard** (`biology_30`) | 16 | 30 | Biology only, shown below |
+
 ## Board pattern used (30-mark Biology preboard)
 
 | Section | Question type | Questions | Marks each | Marks |

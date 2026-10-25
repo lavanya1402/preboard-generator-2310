@@ -7,9 +7,15 @@ import streamlit as st
 
 import papers
 import pdfs
+import storage
 import ui
 
-ui.page_header("Generate paper", "Builds a 30-mark Biology preboard from approved questions only, following the blueprint.")
+ui.page_header("Generate paper", "Builds a preboard paper from teacher-approved questions only, following the chosen blueprint.")
+
+paper_types = storage.list_blueprints()
+paper_type = st.segmented_control("Paper type", list(paper_types), format_func=lambda k: paper_types[k],
+                                  default=storage.DEFAULT_PAPER, key="paper_type")
+paper_type = paper_type or storage.DEFAULT_PAPER
 
 with st.form("paper_details"):
     col1, col2 = st.columns(2)
@@ -28,7 +34,7 @@ if submitted:
     else:
         try:
             with st.spinner("Choosing questions…"):
-                paper = papers.generate_paper(int(seed) if seed else None)
+                paper = papers.generate_paper(int(seed) if seed else None, paper_type=paper_type)
                 meta = {"school": school.strip(), "exam": exam.strip() or "Preboard Examination",
                         "date": date.strftime("%d-%m-%Y"), "duration": duration.strip() or "3 Hours"}
                 # Keep everything in session state so downloads and reruns never change the paper.
@@ -65,7 +71,7 @@ tab_paper, tab_key, tab_analysis = st.tabs(["Question paper", "Answer key", "Ana
 with tab_paper:
     with st.container(border=True):
         st.markdown(f"<div style='text-align:center'><b>{html.escape(meta['school'])}</b><br>{html.escape(meta['exam'])}<br>"
-                    f"Class X · Science (Biology)</div>", unsafe_allow_html=True)
+                    f"Class X · {pdfs.subject_line(paper)}</div>", unsafe_allow_html=True)
         st.markdown(f"Date: {meta['date']}  \nTime: {meta['duration']} · Maximum marks: {summary['total_marks']}")
         with st.expander("General instructions"):
             for i, line in enumerate(paper["general_instructions"], 1):
@@ -74,30 +80,43 @@ with tab_paper:
         for q in paper["questions"]:
             if q["section"] != current:
                 current = q["section"]
-                st.subheader(f"Section {current}", anchor=False)
-                st.caption(paper["section_labels"][current])
+                st.subheader(f"Section {current} – {paper['section_labels'][current]}", anchor=False)
             st.markdown(f"**Q{q['number']}.** {ui.md(q['question'])} &nbsp; :gray[[{q['marks']}]]")
             for letter, option in zip("abcd", q.get("options") or []):
                 st.markdown(f"&emsp;({letter}) {ui.md(option)}")
+            if q.get("alternative"):
+                st.markdown("<div style='text-align:center'><b>OR</b></div>", unsafe_allow_html=True)
+                st.markdown(ui.md(q["alternative"]["question"]))
+                for letter, option in zip("abcd", q["alternative"].get("options") or []):
+                    st.markdown(f"&emsp;({letter}) {ui.md(option)}")
 
 with tab_key:
     for a, q in zip(paper["answer_key"], paper["questions"]):
         with st.container(border=True):
             head = f"**Q{a['number']}** · {a['marks']} mark{'s' if a['marks'] > 1 else ''} · :gray[{q['id']}]"
             st.markdown(head)
-            if a.get("option"):
-                st.markdown(f"**({a['option']})** {ui.md(a['answer'])}")
-                if a.get("explanation"):
-                    st.caption(a["explanation"])
-            else:
-                st.markdown(ui.md(a["answer"]))
-            st.markdown("\n".join(f"- {ui.md(step)}" for step in a["marking_scheme"]))
+            for i, part in enumerate([a] + ([a["alternative"]] if a.get("alternative") else [])):
+                if i:
+                    st.markdown(f"**OR** · :gray[{part['id']}]")
+                if part.get("option"):
+                    st.markdown(f"**({part['option']})** {ui.md(part['answer'])}")
+                    if part.get("explanation"):
+                        st.caption(part["explanation"])
+                else:
+                    st.markdown(ui.md(part["answer"]))
+                st.markdown("\n".join(f"- {ui.md(step)}" for step in part["marking_scheme"]))
 
 with tab_analysis:
     c1, c2, c3 = st.columns(3)
     c1.metric("Total marks", summary["total_marks"], border=True)
     c2.metric("Questions", summary["total_questions"], border=True)
     c3.metric("Competency-based questions", f"{summary['competency_based_share']:.0%}", border=True)
+
+    if len(summary.get("subject_marks", {})) > 1:
+        st.subheader("Marks per subject", anchor=False)
+        cols = st.columns(len(summary["subject_marks"]))
+        for col, (subj, marks) in zip(cols, summary["subject_marks"].items()):
+            col.metric(subj.title(), marks, border=True)
 
     rows = []
     for cid, target in summary["chapter_targets"].items():

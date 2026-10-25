@@ -1,0 +1,215 @@
+{
+  "agent": "syllabus_agent",
+  "scope_note": "Partial run: adds Chemistry and Physics chapters for the 80-mark paper. Official curriculum check still pending.",
+  "sources": [
+    {
+      "kind": "ncert",
+      "note": "Rationalised NCERT Class 10 Science chapter headings"
+    }
+  ],
+  "differences_summary": [
+    "Every chapter gets a 'subject' field (biology / chemistry / physics).",
+    "8 new chapters: 4 Chemistry (NCERT 1-4) and 4 Physics (NCERT 9-12)."
+  ],
+  "proposed_syllabus": {
+    "board": "CBSE",
+    "class": 10,
+    "subject": "Science",
+    "unit": "Science (Biology, Chemistry, Physics)",
+    "session": "2026-27",
+    "verified": false,
+    "note": "Biology chapters from the starter syllabus; Chemistry and Physics chapters added for the full 80-mark paper, based on the rationalised NCERT Class 10 Science textbook. Deleted / formative-only portions still to be checked against the official CBSE 2026-27 curriculum by agents/syllabus_agent.md.",
+    "chapters": [
+      {
+        "chapter_id": "chemical_reactions",
+        "ncert_chapter_no": 1,
+        "name": "Chemical Reactions and Equations",
+        "subject": "chemistry",
+        "topics": [
+          "Chemical equations: writing and balancing",
+          "Types of chemical reactions: combination, decomposition, displacement, double displacement",
+          "Oxidation and reduction (redox reactions)",
+          "Effects of oxidation in everyday life: corrosion and rancidity"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "acids_bases_salts",
+        "ncert_chapter_no": 2,
+        "name": "Acids, Bases and Salts",
+        "subject": "chemistry",
+        "topics": [
+          "Chemical properties of acids and bases; indicators (including olfactory indicators)",
+          "What all acids and all bases have in common",
+          "Strength of acid or base solutions: pH scale and importance of pH in everyday life",
+          "Salts: family of salts, pH of salts",
+          "Chemicals from common salt: sodium hydroxide (chlor-alkali process), bleaching powder, baking soda, washing soda",
+          "Water of crystallisation; Plaster of Paris"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "metals_non_metals",
+        "ncert_chapter_no": 3,
+        "name": "Metals and Non-metals",
+        "subject": "chemistry",
+        "topics": [
+          "Physical properties of metals and non-metals",
+          "Chemical properties of metals: reaction with oxygen, water, acids and salt solutions; reactivity series",
+          "How metals and non-metals react: ionic compounds and their properties",
+          "Occurrence of metals: extraction, enrichment of ores, refining",
+          "Corrosion and its prevention; alloys"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "carbon_compounds",
+        "ncert_chapter_no": 4,
+        "name": "Carbon and its Compounds",
+        "subject": "chemistry",
+        "topics": [
+          "Bonding in carbon: the covalent bond",
+          "Versatile nature of carbon: catenation and tetravalency; saturated and unsaturated compounds",
+          "Chains, branches and rings; homologous series; nomenclature of carbon compounds",
+          "Chemical properties: combustion, oxidation, addition and substitution reactions",
+          "Ethanol and ethanoic acid: properties and reactions",
+          "Soaps and detergents"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "life_processes",
+        "ncert_chapter_no": 5,
+        "name": "Life Processes",
+        "topics": [
+          "What are life processes",
+          "Nutrition: autotrophic nutrition (photosynthesis)",
+          "Nutrition: heterotrophic nutrition and how organisms obtain food",
+          "Nutrition in human beings",
+          "Respiration: aerobic and anaerobic, human respiratory system",
+          "Transportation in human beings: heart, blood vessels, blood, lymph",
+          "Transportation in plants: water and food",
+          "Excretion in human beings and in plants"
+        ],
+        "deleted_or_formative_only": [],
+        "subject": "biology"
+      },
+      {
+        "chapter_id": "control_coordination",
+        "ncert_chapter_no": 6,
+        "name": "Control and Coordination",
+        "topics": [
+          "Animals: nervous system, neurons, synapse",
+          "Reflex action and reflex arc",
+          "Human brain and its parts",
+          "How nervous tissue causes action",
+          "Coordination in plants: immediate response to stimulus",
+          "Coordination in plants: movement due to growth (tropisms), plant hormones",
+          "Hormones in animals: endocrine glands and feedback mechanism"
+        ],
+        "deleted_or_formative_only": [],
+        "subject": "biology"
+      },
+      {
+        "chapter_id": "reproduction",
+        "ncert_chapter_no": 7,
+        "name": "How do Organisms Reproduce?",
+        "topics": [
+          "Do organisms create exact copies of themselves? DNA copying and variation",
+          "Modes of reproduction used by single organisms: fission, fragmentation, regeneration, budding, vegetative propagation, spore formation",
+          "Sexual reproduction: why the sexual mode",
+          "Sexual reproduction in flowering plants",
+          "Reproduction in human beings: changes at puberty, male and female reproductive systems",
+          "What happens when the egg is not fertilised",
+          "Reproductive health"
+        ],
+        "deleted_or_formative_only": [],
+        "subject": "biology"
+      },
+      {
+        "chapter_id": "heredity",
+        "ncert_chapter_no": 8,
+        "name": "Heredity",
+        "topics": [
+          "Accumulation of variation during reproduction",
+          "Inherited traits",
+          "Rules for the inheritance of traits: Mendel's contributions (monohybrid and dihybrid crosses)",
+          "How do these traits get expressed",
+          "Sex determination"
+        ],
+        "deleted_or_formative_only": [],
+        "subject": "biology"
+      },
+      {
+        "chapter_id": "light_reflection_refraction",
+        "ncert_chapter_no": 9,
+        "name": "Light – Reflection and Refraction",
+        "subject": "physics",
+        "topics": [
+          "Reflection of light; spherical mirrors and image formation",
+          "Mirror formula and magnification; uses of spherical mirrors",
+          "Refraction of light; refraction through a glass slab; refractive index; Snell's law",
+          "Spherical lenses and image formation; lens formula and magnification",
+          "Power of a lens"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "human_eye",
+        "ncert_chapter_no": 10,
+        "name": "The Human Eye and the Colourful World",
+        "subject": "physics",
+        "topics": [
+          "The human eye; power of accommodation; near and far point",
+          "Defects of vision and their correction: myopia, hypermetropia, presbyopia",
+          "Refraction of light through a glass prism; dispersion of white light",
+          "Atmospheric refraction",
+          "Scattering of light: Tyndall effect, why the sky is blue, colour of the sun at sunrise and sunset"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "electricity",
+        "ncert_chapter_no": 11,
+        "name": "Electricity",
+        "subject": "physics",
+        "topics": [
+          "Electric current and circuit; electric potential and potential difference; circuit diagrams",
+          "Ohm's law; factors on which resistance depends; resistivity",
+          "Resistors in series and in parallel",
+          "Heating effect of electric current: Joule's law and applications",
+          "Electric power"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "magnetic_effects",
+        "ncert_chapter_no": 12,
+        "name": "Magnetic Effects of Electric Current",
+        "subject": "physics",
+        "topics": [
+          "Magnetic field and field lines",
+          "Magnetic field due to a current-carrying conductor: straight wire (right-hand thumb rule), circular loop, solenoid",
+          "Force on a current-carrying conductor in a magnetic field: Fleming's left-hand rule",
+          "Domestic electric circuits"
+        ],
+        "deleted_or_formative_only": []
+      },
+      {
+        "chapter_id": "our_environment",
+        "ncert_chapter_no": 13,
+        "name": "Our Environment",
+        "topics": [
+          "Ecosystem and its components",
+          "Food chains and webs, trophic levels, 10 percent law",
+          "Biological magnification",
+          "How do our activities affect the environment: ozone layer depletion",
+          "Managing the garbage we produce"
+        ],
+        "deleted_or_formative_only": [],
+        "subject": "biology"
+      }
+    ]
+  },
+  "generated_at": "2026-10-24T22:56:33"
+}

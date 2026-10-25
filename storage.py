@@ -32,7 +32,12 @@ ROOT = Path(__file__).resolve().parent
 QTYPE_MARKS = {"mcq": 1, "assertion_reason": 1, "vsa": 2, "sa": 3, "la": 5, "case_based": 4}
 QTYPE_CODES = {"mcq": "MCQ", "assertion_reason": "AR", "vsa": "VSA", "sa": "SA", "la": "LA", "case_based": "CB"}
 CHAPTER_CODES = {"life_processes": "LP", "control_coordination": "CC", "reproduction": "RP",
-                 "heredity": "HD", "our_environment": "OE"}
+                 "heredity": "HD", "our_environment": "OE",
+                 "chemical_reactions": "CR", "acids_bases_salts": "AB", "metals_non_metals": "MN",
+                 "carbon_compounds": "CA", "light_reflection_refraction": "LR", "human_eye": "HE",
+                 "electricity": "EL", "magnetic_effects": "ME"}
+SUBJECTS = ("biology", "chemistry", "physics")
+DEFAULT_PAPER = "biology_30"  # the original 30-mark Biology blueprint (data/paper_blueprint.json)
 DIFFICULTIES = ("easy", "medium", "hard")
 STATUSES = ("approved", "pending", "rejected")
 SOURCES = ("teacher", "ai")
@@ -95,6 +100,8 @@ class JsonBackend:
             return self.dir / self.DOC_FILES[doc]
         if doc.startswith("report:"):
             return self.dir / "reports" / f"{doc.split(':', 1)[1]}.json"
+        if doc.startswith("blueprint:"):
+            return self.dir / "blueprints" / f"{doc.split(':', 1)[1]}.json"
         raise KeyError(f"Unknown document '{doc}'")
 
     def _read(self, path, default):
@@ -142,9 +149,10 @@ class JsonBackend:
             self._write(self._path(doc), data)
 
     def list_docs(self, prefix):
-        if prefix != "report:":
+        folder = {"report:": "reports", "blueprint:": "blueprints"}.get(prefix)
+        if folder is None:
             return []
-        return sorted(f"report:{p.stem}" for p in (self.dir / "reports").glob("*.json"))
+        return sorted(f"{prefix}{p.stem}" for p in (self.dir / folder).glob("*.json"))
 
 
 class SupabaseBackend:
@@ -230,8 +238,29 @@ def save_syllabus(data):
     backend().save_doc("syllabus", data)
 
 
-def get_blueprint():
-    return backend().get_doc("blueprint")
+def _blueprint_doc(name):
+    if not name or name == DEFAULT_PAPER:
+        return "blueprint"
+    if not re.fullmatch(r"[a-z0-9_]+", name):
+        raise ValueError("Paper type names may only use lowercase letters, digits and underscores.")
+    return f"blueprint:{name}"
+
+
+def get_blueprint(name=None):
+    """The blueprint for a paper type; no name = the original Biology 30-mark paper."""
+    return backend().get_doc(_blueprint_doc(name))
+
+
+def list_blueprints():
+    """{paper type name: title} for every saved blueprint, the default first."""
+    out = {}
+    default = backend().get_doc("blueprint")
+    if default:
+        out[DEFAULT_PAPER] = default.get("title", DEFAULT_PAPER)
+    for doc in backend().list_docs("blueprint:"):
+        name = doc.split(":", 1)[1]
+        out[name] = (backend().get_doc(doc) or {}).get("title", name)
+    return out
 
 
 def validate_blueprint(bp, chapters=None):
@@ -260,17 +289,29 @@ def validate_blueprint(bp, chapters=None):
     unknown = [c for c in bp["chapter_marks"] if chapters and c not in chapters]
     if unknown:
         errors.append(f"Chapters not in the syllabus: {', '.join(unknown)}.")
+    for s in bp["sections"]:
+        if not 0 <= s.get("choice", 0) <= s.get("count", 0):
+            errors.append(f"Section {s.get('section')} {s.get('qtype')}: 'choice' must be between 0 and count.")
+        if s.get("subject") and s["subject"] not in SUBJECTS:
+            errors.append(f"Section {s.get('section')}: unknown subject '{s['subject']}'.")
+    subjects = chapter_subjects()
+    if any(s.get("subject") for s in bp["sections"]) and subjects:
+        for subj in {s["subject"] for s in bp["sections"] if s.get("subject")}:
+            by_sections = sum(s["count"] * s["marks_each"] for s in bp["sections"] if s.get("subject") == subj)
+            by_chapters = sum(m for c, m in bp["chapter_marks"].items() if subjects.get(c) == subj)
+            if by_sections != by_chapters:
+                errors.append(f"{subj.title()}: sections give {by_sections} marks but its chapters add up to {by_chapters}.")
     mix = bp.get("difficulty_mix")
     if mix and abs(sum(mix.values()) - 1) > 0.01:
         errors.append("difficulty_mix shares must add up to 1.0.")
     return errors
 
 
-def save_blueprint(data):
+def save_blueprint(data, name=None):
     errors = validate_blueprint(data)
     if errors:
         raise ValidationError(errors)
-    backend().save_doc("blueprint", data)
+    backend().save_doc(_blueprint_doc(name), data)
 
 
 def get_report(name):
@@ -292,11 +333,19 @@ def chapter_names():
     return {c["chapter_id"]: c["name"] for c in (get_syllabus() or {}).get("chapters", [])}
 
 
+def chapter_subjects():
+    """{chapter_id: 'biology' | 'chemistry' | 'physics'} from the syllabus (biology if not stated)."""
+    return {c["chapter_id"]: c.get("subject", "biology") for c in (get_syllabus() or {}).get("chapters", [])}
+
+
 # ---------------------------------------------------------------- questions: reading
-def list_questions(chapter=None, qtype=None, difficulty=None, status=None, source=None, text=None):
+def list_questions(chapter=None, qtype=None, difficulty=None, status=None, source=None, text=None, subject=None):
     """All questions matching the filters. `chapter` accepts a chapter_id or the chapter name."""
     out = []
+    subjects = chapter_subjects() if subject else {}
     for q in backend().list_questions():
+        if subject and subjects.get(q["chapter_id"], "biology") != subject.lower():
+            continue
         if chapter and chapter.lower() not in (q["chapter_id"].lower(), q["chapter"].lower()):
             continue
         if qtype and q["qtype"] != qtype:
@@ -465,6 +514,11 @@ def stats():
         return out
 
     approved = [q for q in questions if q.get("status") == "approved"]
+    subjects = chapter_subjects()
+    by_subject = {}
+    for q in approved:
+        subj = subjects.get(q["chapter_id"], "biology")
+        by_subject[subj] = by_subject.get(subj, 0) + 1
     by_chapter = {}
     for q in approved:
         by_chapter[q["chapter_id"]] = by_chapter.get(q["chapter_id"], 0) + 1
@@ -475,6 +529,7 @@ def stats():
         "by_qtype": count("qtype"),
         "by_difficulty": count("difficulty"),
         "approved_by_chapter": by_chapter,
+        "approved_by_subject": by_subject,
         "competency_based_share": round(sum(bool(q.get("competency_based")) for q in approved) / len(approved), 2)
         if approved else 0,
     }

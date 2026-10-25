@@ -42,24 +42,32 @@ def get_syllabus(chapter_id: str | None = None) -> dict:
 
 
 @mcp.tool()
-def get_blueprint() -> dict:
-    """Return the paper blueprint: sections, question types, marks per chapter, difficulty mix."""
-    return storage.get_blueprint()
+def get_blueprint(paper_type: str | None = None) -> dict:
+    """Return a paper blueprint: sections, question types, subjects, OR choices, marks per chapter.
+
+    paper_type: 'biology_30' (default, 30-mark Biology) or 'science_80' (full 80-mark Board 2027 pattern).
+    Call with paper_type='list' to see every available paper type.
+    """
+    if paper_type == "list":
+        return storage.list_blueprints()
+    bp = storage.get_blueprint(paper_type)
+    return bp or {"error": f"No paper type '{paper_type}'. Available: {storage.list_blueprints()}"}
 
 
 @mcp.tool()
 def search_questions(chapter: str | None = None, qtype: str | None = None, difficulty: str | None = None,
-                     status: str | None = "approved", limit: int = 20) -> dict:
+                     status: str | None = "approved", limit: int = 20, subject: str | None = None) -> dict:
     """Search the question bank.
 
     chapter: chapter_id or name, e.g. 'life_processes' or 'Life Processes'.
     qtype: one of mcq, assertion_reason, vsa, sa, la, case_based.
     difficulty: easy, medium or hard.
     status: approved (default), pending, rejected, or 'any'.
+    subject: biology, chemistry or physics.
     """
     if status in ("any", "all", ""):
         status = None
-    found = storage.list_questions(chapter=chapter, qtype=qtype, difficulty=difficulty, status=status)
+    found = storage.list_questions(chapter=chapter, qtype=qtype, difficulty=difficulty, status=status, subject=subject)
     return {"total_found": len(found), "returned": min(len(found), limit), "questions": found[:max(limit, 0)]}
 
 
@@ -98,15 +106,18 @@ def update_question_status(id: str, status: str) -> dict:
 
 
 @mcp.tool()
-def generate_paper(seed: int | None = None) -> dict:
+def generate_paper(seed: int | None = None, paper_type: str | None = None) -> dict:
     """Generate a preboard paper from APPROVED questions following the blueprint.
+
+    paper_type: 'biology_30' (default) or 'science_80' (Physics + Chemistry + Biology, 80 marks,
+    Board 2027 pattern with internal choices).
 
     Returns the paper (numbered questions by section), the answer key with marking scheme,
     and a summary of marks per chapter vs target. Records last_used_in_paper on each question.
     The same seed gives the same paper.
     """
     try:
-        paper = papers.generate_paper(seed)
+        paper = papers.generate_paper(seed, paper_type=paper_type)
     except ValueError as e:
         return {"ok": False, "error": str(e)}
     return {"ok": True, **paper}

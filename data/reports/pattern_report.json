@@ -1,0 +1,119 @@
+{
+  "agent": "pattern_agent",
+  "scope_note": "Partial run: format of the official 2026-27 Class X Science SQP only. Past board papers (topic frequency) not analysed yet.",
+  "sources": [
+    {
+      "year": "2026-27",
+      "kind": "sqp",
+      "file": "sqp_2026_27/Science-SQP.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/Science-SQP.pdf"
+    },
+    {
+      "year": "2026-27",
+      "kind": "marking_scheme",
+      "file": "sqp_2026_27/Science-MS.pdf",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassX_2026_27/Science-MS.pdf"
+    }
+  ],
+  "missing_sources": [],
+  "format_2026_27": {
+    "total_marks": 80,
+    "total_questions": 39,
+    "duration": "3 hours",
+    "note": "SQP states: no change in the Question Paper Design and Assessment Pattern for 2026-27. 3 sections by subject: A Biology, B Chemistry, C Physics.",
+    "sections": [
+      {
+        "section": "A",
+        "subject": "Biology",
+        "questions": "1-16",
+        "marks": 30,
+        "types": {
+          "mcq": 7,
+          "assertion_reason": 2,
+          "vsa": 3,
+          "sa": 2,
+          "case_based": 1,
+          "la": 1
+        },
+        "internal_choice": [
+          "Q11 (2 marks): full OR",
+          "Q15 (case-based): sub-part C OR D",
+          "Q16 (5 marks): full OR"
+        ]
+      },
+      {
+        "section": "B",
+        "subject": "Chemistry",
+        "questions": "17-29",
+        "marks": 25,
+        "types": {
+          "mcq": 7,
+          "assertion_reason": 1,
+          "vsa": 1,
+          "sa": 2,
+          "case_based": 1,
+          "la": 1
+        },
+        "internal_choice": [
+          "Q26 (3 marks): full OR",
+          "Q28 (case-based): sub-part C OR D",
+          "Q29 (5 marks): full OR"
+        ]
+      },
+      {
+        "section": "C",
+        "subject": "Physics",
+        "questions": "30-39",
+        "marks": 25,
+        "types": {
+          "mcq": 2,
+          "assertion_reason": 1,
+          "vsa": 2,
+          "sa": 3,
+          "case_based": 1,
+          "la": 1
+        },
+        "internal_choice": [
+          "Q34 (2 marks): full OR",
+          "Q38 (case-based): sub-part C OR D",
+          "Q39 (5 marks): full OR"
+        ]
+      }
+    ],
+    "type_totals": {
+      "mcq": 16,
+      "assertion_reason": 4,
+      "vsa": 6,
+      "sa": 7,
+      "case_based": 3,
+      "la": 3
+    },
+    "visually_impaired_alternatives": "Questions with diagrams have a text-only alternative for visually impaired students."
+  },
+  "sqp_marks_by_chapter": {
+    "biology": {
+      "life_processes": 11,
+      "control_coordination": 5,
+      "reproduction": 4,
+      "heredity": 5,
+      "our_environment": 5
+    },
+    "chemistry": {
+      "chemical_reactions": 7,
+      "acids_bases_salts": 6,
+      "metals_non_metals": 5,
+      "carbon_compounds": 7
+    },
+    "physics": {
+      "light_reflection_refraction": 7,
+      "human_eye": 5,
+      "electricity": 6,
+      "magnetic_effects": 7
+    }
+  },
+  "confidence_notes": [
+    "Chapter split is my reading of the SQP questions. Q6 (chromosome number in gametes) counted under Heredity; Q27 (three short reasons) counted under Acids, Bases and Salts.",
+    "Unit totals match the curriculum weightage: Chemical Substances 25, World of Living + Our Environment 30, Light 12, Electricity + Magnetism 13."
+  ],
+  "generated_at": "2026-10-24T22:49:56"
+}
