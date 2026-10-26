@@ -1544,5 +1544,1904 @@
     "source": "ai",
     "created_at": "2026-10-23T15:44:35+00:00",
     "last_used_in_paper": null
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Types of chemical reactions: combination, decomposition, displacement, double displacement",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Which of the following is a decomposition reaction?",
+    "options": [
+      "CaO + H₂O → Ca(OH)₂",
+      "2AgCl → 2Ag + Cl₂ (in sunlight)",
+      "Fe + CuSO₄ → FeSO₄ + Cu",
+      "NaOH + HCl → NaCl + H₂O"
+    ],
+    "answer": "2AgCl → 2Ag + Cl₂ (in sunlight)",
+    "explanation": "Silver chloride breaks down into silver and chlorine in sunlight – one substance gives two simpler ones.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-MCQ-001"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Effects of oxidation in everyday life: corrosion and rancidity",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Packets of potato chips are flushed with nitrogen gas before sealing. This is done mainly to:",
+    "options": [
+      "make the chips crispier",
+      "prevent the oils and fats in the chips from getting oxidised",
+      "increase the weight of the packet",
+      "kill bacteria by cooling the chips"
+    ],
+    "answer": "prevent the oils and fats in the chips from getting oxidised",
+    "explanation": "Nitrogen keeps oxygen away, so the fats do not become rancid.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-MCQ-002"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Oxidation and reduction (redox reactions)",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "In the reaction ZnO + C → Zn + CO, the substance that gets oxidised is:",
+    "options": [
+      "ZnO",
+      "C",
+      "Zn",
+      "CO"
+    ],
+    "answer": "Zn",
+    "explanation": "Carbon gains oxygen to form CO, so carbon is oxidised; ZnO is reduced.",
+    "marking_scheme": [
+      "1 mark for the correct option (b)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-MCQ-003"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Types of chemical reactions: combination, decomposition, displacement, double displacement",
+    "qtype": "mcq",
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "A student places clean iron nails in blue copper sulphate solution for 30 minutes. What will she observe?",
+    "options": [
+      "The nails get a brownish coating and the solution turns pale green.",
+      "The nails become shiny silver and the solution turns colourless.",
+      "There is no change because iron is less reactive than copper.",
+      "The solution turns red and a gas is given off."
+    ],
+    "answer": "The nails get a brownish coating and the solution turns pale green.",
+    "explanation": "Iron displaces copper: copper deposits on the nails and green iron sulphate solution forms.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-MCQ-004"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Effects of oxidation in everyday life: corrosion and rancidity",
+    "qtype": "assertion_reason",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): Silver articles turn black when left in air for a long time.\nReason (R): Silver reacts with sulphur compounds present in the air to form a black coating of silver sulphide.",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "The black coating is silver sulphide, which explains the tarnishing.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Chemical Reactions and Equations",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "CR-AR-001"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Types of chemical reactions: combination, decomposition, displacement, double displacement",
+    "qtype": "vsa",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Why is respiration called an exothermic reaction? Write the word equation for it.",
+    "answer": "Respiration releases energy (heat) while glucose is broken down, so it is exothermic.\nGlucose + oxygen → carbon dioxide + water + energy.",
+    "marking_scheme": [
+      "1 mark: energy is released.",
+      "1 mark: correct word equation."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-VSA-001"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Chemical equations: writing and balancing",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Balance the following equations and state the type of each reaction:\n(a) Fe + H₂O → Fe₃O₄ + H₂ (with steam)\n(b) Pb(NO₃)₂ → PbO + NO₂ + O₂ (on heating)\n(c) BaCl₂ + Na₂SO₄ → BaSO₄ + NaCl",
+    "answer": "(a) 3Fe + 4H₂O → Fe₃O₄ + 4H₂ – displacement (redox) reaction.\n(b) 2Pb(NO₃)₂ → 2PbO + 4NO₂ + O₂ – thermal decomposition.\n(c) BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl – double displacement (precipitation).",
+    "marking_scheme": [
+      "1 mark each: balanced equation with the correct type (½ + ½)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-SA-001"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Types of chemical reactions: combination, decomposition, displacement, double displacement",
+    "qtype": "case_based",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nDuring a class activity, Riya heated a few green crystals of ferrous sulphate in a dry boiling tube. The crystals first lost their green colour and finally a reddish-brown solid remained. A smell like burning sulphur was noticed.\nA. Name the type of reaction that took place. (1)\nB. Why did the green crystals lose their colour at first? (1)\nAttempt either sub-part C or D.\nC. Write the balanced chemical equation for the reaction and name the gases given off. (2)\nOR\nD. Decomposition can also be caused by light and by electricity. Give one example of each. (2)",
+    "answer": "A. Thermal decomposition reaction.\nB. On heating, the crystals lose their water of crystallisation.\nC. 2FeSO₄ → Fe₂O₃ + SO₂ + SO₃; gases: sulphur dioxide and sulphur trioxide.\nD. Light: 2AgCl → 2Ag + Cl₂ (or AgBr in sunlight). Electricity: electrolysis of water, 2H₂O → 2H₂ + O₂.",
+    "marking_scheme": [
+      "1 mark: thermal decomposition.",
+      "1 mark: loss of water of crystallisation.",
+      "C – 1 mark: balanced equation; 1 mark: both gases named.",
+      "D – 1 mark: example with light; 1 mark: example with electricity."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-CB-001"
+  },
+  {
+    "chapter_id": "chemical_reactions",
+    "topic": "Oxidation and reduction (redox reactions)",
+    "qtype": "la",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) Define oxidation and reduction in terms of gain or loss of oxygen and hydrogen.\n(b) Identify the substance oxidised and the substance reduced in:\n   (i) CuO + H₂ → Cu + H₂O\n   (ii) MnO₂ + 4HCl → MnCl₂ + 2H₂O + Cl₂\n(c) What is corrosion? Suggest two ways to prevent rusting of iron.",
+    "answer": "(a) Oxidation: gain of oxygen or loss of hydrogen. Reduction: loss of oxygen or gain of hydrogen.\n(b) (i) H₂ is oxidised, CuO is reduced. (ii) HCl is oxidised, MnO₂ is reduced.\n(c) Corrosion is the slow eating away of a metal by air, moisture or chemicals around it. Rusting can be prevented by painting, oiling or greasing, galvanising (coating with zinc) or chrome plating.",
+    "marking_scheme": [
+      "1 mark: both definitions.",
+      "2 marks: one mark for each equation (oxidised and reduced both correct).",
+      "1 mark: definition of corrosion.",
+      "1 mark: any two methods."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "Chemical Reactions and Equations",
+    "id": "CR-LA-001"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Strength of acid or base solutions: pH scale and importance of pH in everyday life",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "A solution turns blue litmus red. Its pH is most likely to be:",
+    "options": [
+      "3",
+      "7",
+      "9",
+      "12"
+    ],
+    "answer": "3",
+    "explanation": "Acids turn blue litmus red and have pH less than 7.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-MCQ-001"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Strength of acid or base solutions: pH scale and importance of pH in everyday life",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Soil in a farmer's field has become too acidic for his crop. Which substance should he add to it?",
+    "options": [
+      "Slaked lime (calcium hydroxide)",
+      "Ammonium chloride",
+      "Vinegar",
+      "Dilute sulphuric acid"
+    ],
+    "answer": "Slaked lime (calcium hydroxide)",
+    "explanation": "A base such as slaked lime neutralises the excess acid in the soil.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-MCQ-002"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Chemicals from common salt: sodium hydroxide (chlor-alkali process), bleaching powder, baking soda, washing soda",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "The chemical formula of washing soda is:",
+    "options": [
+      "Na₂CO₃·10H₂O",
+      "NaHCO₃",
+      "Na₂CO₃",
+      "CaSO₄·½H₂O"
+    ],
+    "answer": "Na₂CO₃·10H₂O",
+    "explanation": "Washing soda is sodium carbonate decahydrate.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-MCQ-003"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Water of crystallisation; Plaster of Paris",
+    "qtype": "mcq",
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Plaster of Paris is stored in a moisture-proof container because it:",
+    "options": [
+      "reacts with water and sets into a hard mass of gypsum",
+      "gives off chlorine in moist air",
+      "decomposes into calcium oxide in moist air",
+      "becomes strongly acidic in moist air"
+    ],
+    "answer": "reacts with water and sets into a hard mass of gypsum",
+    "explanation": "CaSO₄·½H₂O combines with water to form gypsum, CaSO₄·2H₂O, which is hard.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-MCQ-004"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Strength of acid or base solutions: pH scale and importance of pH in everyday life",
+    "qtype": "assertion_reason",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): Tooth decay starts when the pH in the mouth falls below 5.5.\nReason (R): Tooth enamel, made of calcium phosphate, starts getting corroded when the pH is lower than 5.5.",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "Acids made by bacteria lower the pH, and below 5.5 the enamel corrodes.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Acids, Bases and Salts",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "AB-AR-001"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "What all acids and all bases have in common",
+    "qtype": "vsa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Dry HCl gas does not change the colour of dry blue litmus paper, but hydrochloric acid turns it red. Explain why.",
+    "answer": "Acids show acidic behaviour only in water, where they produce H⁺ ions (H₃O⁺). Dry HCl gas does not form H⁺ ions, so it does not affect dry litmus.",
+    "marking_scheme": [
+      "1 mark: acidic behaviour needs water.",
+      "1 mark: H⁺ / H₃O⁺ ions formed only in solution."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-VSA-001"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Strength of acid or base solutions: pH scale and importance of pH in everyday life",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Three solutions P, Q and R were tested with universal indicator. P turned red, Q turned green and R turned blue.\n(a) Arrange P, Q and R in increasing order of pH.\n(b) Which of them could be sodium hydroxide solution and which could be gastric juice?\n(c) What happens when P is slowly added to R? Name this type of reaction.",
+    "answer": "(a) P < Q < R.\n(b) R could be sodium hydroxide solution; P could be gastric juice.\n(c) The acid and base react to form a salt and water and heat is given out; the pH moves towards 7. This is a neutralisation reaction.",
+    "marking_scheme": [
+      "1 mark: correct order.",
+      "1 mark: both identified.",
+      "1 mark: salt + water / neutralisation."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-SA-001"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Chemical properties of acids and bases; indicators (including olfactory indicators)",
+    "qtype": "sa",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Name the gas given off and write a balanced chemical equation when:\n(a) zinc granules react with dilute sulphuric acid\n(b) sodium carbonate reacts with dilute hydrochloric acid\n(c) How would you test the gas formed in (a)?",
+    "answer": "(a) Hydrogen: Zn + H₂SO₄ → ZnSO₄ + H₂\n(b) Carbon dioxide: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂\n(c) Bring a burning matchstick near the gas – it burns with a pop sound.",
+    "marking_scheme": [
+      "1 mark: (a) gas and equation.",
+      "1 mark: (b) gas and equation.",
+      "1 mark: pop test."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-SA-002"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Chemicals from common salt: sodium hydroxide (chlor-alkali process), bleaching powder, baking soda, washing soda",
+    "qtype": "case_based",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nMeera's mother adds a pinch of baking soda to the batter while making dhoklas, and they turn out soft and spongy. Meera also notices that her grandfather sometimes takes an antacid containing the same substance when he has acidity.\nA. Write the chemical name and formula of baking soda. (1)\nB. Why does baking soda make the dhoklas soft and spongy? (1)\nAttempt either sub-part C or D.\nC. Write the equation for the action of heat on baking soda. Why is tartaric acid added to baking powder? (2)\nOR\nD. How does baking soda give relief from acidity? Write the equation for its reaction with hydrochloric acid. (2)",
+    "answer": "A. Sodium hydrogencarbonate, NaHCO₃.\nB. On heating it gives off carbon dioxide gas, which makes the batter rise.\nC. 2NaHCO₃ → Na₂CO₃ + H₂O + CO₂ (on heating). Tartaric acid neutralises the sodium carbonate formed, which would otherwise make the food taste bitter.\nD. It is a mild base that neutralises excess acid in the stomach: NaHCO₃ + HCl → NaCl + H₂O + CO₂.",
+    "marking_scheme": [
+      "1 mark: name and formula.",
+      "1 mark: CO₂ released.",
+      "C – 1 mark: equation; 1 mark: role of tartaric acid.",
+      "D – 1 mark: neutralises excess acid; 1 mark: equation."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:45+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-CB-001"
+  },
+  {
+    "chapter_id": "acids_bases_salts",
+    "topic": "Chemicals from common salt: sodium hydroxide (chlor-alkali process), bleaching powder, baking soda, washing soda",
+    "qtype": "la",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) Why should an acid always be added to water and not water to an acid? (2)\n(b) How is bleaching powder prepared? Write the equation and give two uses. (2)\n(c) What is water of crystallisation? Give one example. (1)",
+    "answer": "(a) Mixing an acid with water is highly exothermic. If water is added to concentrated acid, the heat can make the mixture splash out and cause burns, and the container may break. The acid must be added slowly to water with constant stirring.\n(b) By the action of chlorine on dry slaked lime: Ca(OH)₂ + Cl₂ → CaOCl₂ + H₂O. Uses (any two): bleaching cotton and linen, disinfecting drinking water, as an oxidising agent in industry.\n(c) The fixed number of water molecules present in one formula unit of a salt, e.g. CuSO₄·5H₂O.",
+    "marking_scheme": [
+      "1 mark: reaction is exothermic.",
+      "1 mark: risk of splashing / correct method.",
+      "1 mark: equation.",
+      "1 mark: two uses.",
+      "1 mark: definition with example."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "Acids, Bases and Salts",
+    "id": "AB-LA-001"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "Physical properties of metals and non-metals",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Which of these metals is a liquid at room temperature?",
+    "options": [
+      "Mercury",
+      "Sodium",
+      "Aluminium",
+      "Iron"
+    ],
+    "answer": "Mercury",
+    "explanation": "Mercury is the only common metal that is liquid at room temperature.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-MCQ-001"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "Chemical properties of metals: reaction with oxygen, water, acids and salt solutions; reactivity series",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Which metal reacts so vigorously with cold water that it is stored under kerosene?",
+    "options": [
+      "Sodium",
+      "Iron",
+      "Copper",
+      "Aluminium"
+    ],
+    "answer": "Sodium",
+    "explanation": "Sodium catches fire with air and water, so it is kept under kerosene.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-MCQ-002"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "Chemical properties of metals: reaction with oxygen, water, acids and salt solutions; reactivity series",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Copper turnings are added to colourless silver nitrate solution. After some time:",
+    "options": [
+      "the solution turns blue and shiny silver deposits on the copper",
+      "nothing happens because copper is less reactive than silver",
+      "the solution turns green and hydrogen is given off",
+      "the copper dissolves and the solution stays colourless"
+    ],
+    "answer": "the solution turns blue and shiny silver deposits on the copper",
+    "explanation": "Copper is more reactive than silver and displaces it; blue copper nitrate forms.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-MCQ-003"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "How metals and non-metals react: ionic compounds and their properties",
+    "qtype": "mcq",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "Which of the following oxides is amphoteric?",
+    "options": [
+      "Al₂O₃",
+      "Na₂O",
+      "MgO",
+      "CO₂"
+    ],
+    "answer": "Al₂O₃",
+    "explanation": "Aluminium oxide reacts with both acids and bases.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-MCQ-004"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "How metals and non-metals react: ionic compounds and their properties",
+    "qtype": "assertion_reason",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): Ionic compounds have high melting and boiling points.\nReason (R): Strong forces of attraction act between the oppositely charged ions.",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "A lot of energy is needed to overcome the strong attraction between ions.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Metals and Non-metals",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "MN-AR-001"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "How metals and non-metals react: ionic compounds and their properties",
+    "qtype": "vsa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Show the formation of sodium chloride by the transfer of electrons. Name the ions present in it.",
+    "answer": "Na → Na⁺ + e⁻ (2,8,1 → 2,8)\nCl + e⁻ → Cl⁻ (2,8,7 → 2,8,8)\nNa⁺ + Cl⁻ → NaCl. Ions: sodium ion (Na⁺) and chloride ion (Cl⁻).",
+    "marking_scheme": [
+      "1 mark: electron transfer shown.",
+      "1 mark: both ions named."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-VSA-001"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "Corrosion and its prevention; alloys",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Give reasons:\n(a) Aluminium is used to make cooking utensils.\n(b) Gold and platinum are found in the free state in nature.\n(c) A copper vessel develops a green coating when left in moist air.",
+    "answer": "(a) Aluminium is a good conductor of heat, is light and does not corrode easily because of a protective oxide layer.\n(b) They are very unreactive, so they do not combine with other elements.\n(c) Copper reacts with moist carbon dioxide in the air to form green basic copper carbonate.",
+    "marking_scheme": [
+      "1 mark each for the correct reason."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-SA-001"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "Occurrence of metals: extraction, enrichment of ores, refining",
+    "qtype": "case_based",
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nA mining company in Rajasthan extracts zinc from zinc blende (ZnS). The concentrated ore is first heated strongly in a plentiful supply of air, and the product is then heated with coke in a furnace to obtain zinc metal.\nA. What is heating a sulphide ore in excess air called? (1)\nB. Write the balanced equation for this step for zinc blende. (1)\nAttempt either sub-part C or D.\nC. How is zinc obtained from the product of B? Write the equation and name the reducing agent. (2)\nOR\nD. Sodium is not obtained by heating its oxide with carbon. Why? How is it extracted? (2)",
+    "answer": "A. Roasting.\nB. 2ZnS + 3O₂ → 2ZnO + 2SO₂.\nC. ZnO + C → Zn + CO; carbon (coke) is the reducing agent.\nD. Sodium is highly reactive and has more affinity for oxygen than carbon has, so carbon cannot reduce its oxide. Sodium is obtained by electrolysis of molten sodium chloride.",
+    "marking_scheme": [
+      "1 mark: roasting.",
+      "1 mark: balanced equation.",
+      "C – 1 mark: equation; 1 mark: reducing agent.",
+      "D – 1 mark: reason; 1 mark: electrolysis of molten chloride."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-CB-001"
+  },
+  {
+    "chapter_id": "metals_non_metals",
+    "topic": "Chemical properties of metals: reaction with oxygen, water, acids and salt solutions; reactivity series",
+    "qtype": "la",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "(a) Write balanced equations for the reaction of (i) iron with steam and (ii) calcium with water. Why does calcium start floating during its reaction? (2)\n(b) Arrange copper, zinc, sodium and iron in decreasing order of reactivity. Describe a simple activity to show that zinc is more reactive than copper. (2)\n(c) What is an alloy? Why is pure gold mixed with copper or silver for making jewellery? (1)",
+    "answer": "(a) 3Fe + 4H₂O → Fe₃O₄ + 4H₂; Ca + 2H₂O → Ca(OH)₂ + H₂. Bubbles of hydrogen stick to the surface of calcium, so it floats.\n(b) Na > Zn > Fe > Cu. Put a zinc strip in blue copper sulphate solution: the blue colour fades and reddish-brown copper deposits on the zinc, so zinc has displaced copper.\n(c) An alloy is a homogeneous mixture of a metal with other metals or a non-metal. Pure (24-carat) gold is too soft, so it is hardened by alloying.",
+    "marking_scheme": [
+      "1 mark: both equations.",
+      "1 mark: hydrogen bubbles.",
+      "1 mark: order.",
+      "1 mark: displacement activity.",
+      "1 mark: alloy definition and reason."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "Metals and Non-metals",
+    "id": "MN-LA-001"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Bonding in carbon: the covalent bond",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "How many covalent bonds are present in a molecule of methane (CH₄)?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": "4",
+    "explanation": "Carbon shares one electron pair with each of the four hydrogen atoms.",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-MCQ-001"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Chains, branches and rings; homologous series; nomenclature of carbon compounds",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Which of the following belongs to the same homologous series as C₃H₆?",
+    "options": [
+      "C₄H₈",
+      "C₃H₈",
+      "C₂H₆",
+      "C₄H₁₀"
+    ],
+    "answer": "C₄H₈",
+    "explanation": "C₃H₆ and C₄H₈ are alkenes (CₙH₂ₙ) and differ by a CH₂ unit.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-MCQ-002"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Chemical properties: combustion, oxidation, addition and substitution reactions",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "The flame of a gas stove turns yellow and the bottom of the vessel gets black. This shows that:",
+    "options": [
+      "the fuel is not burning completely because of insufficient air",
+      "the gas contains sodium",
+      "the flame is hotter than usual",
+      "complete combustion is taking place"
+    ],
+    "answer": "the fuel is not burning completely because of insufficient air",
+    "explanation": "Incomplete combustion gives a sooty yellow flame; the air holes need cleaning.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-MCQ-003"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Ethanol and ethanoic acid: properties and reactions",
+    "qtype": "mcq",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "The functional group present in ethanoic acid is:",
+    "options": [
+      "–COOH",
+      "–OH",
+      "–CHO",
+      ">C=O (ketone)"
+    ],
+    "answer": "–COOH",
+    "explanation": "Ethanoic acid (CH₃COOH) is a carboxylic acid.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-MCQ-004"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Chemical properties: combustion, oxidation, addition and substitution reactions",
+    "qtype": "assertion_reason",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): Vegetable oils are converted into vanaspati ghee by heating with hydrogen in the presence of nickel.\nReason (R): Addition of hydrogen converts unsaturated compounds into saturated compounds.",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "Hydrogenation is an addition reaction that saturates the oils.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Carbon and its Compounds",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "CA-AR-001"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Soaps and detergents",
+    "qtype": "assertion_reason",
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Assertion (A): Detergents can be used for washing clothes even in hard water.\nReason (R): Detergents are sodium salts of long-chain carboxylic acids.",
+    "answer": "Assertion (A) is true, but Reason (R) is false.",
+    "explanation": "A is true; R is false – that describes soaps. Detergents are sulphonate or ammonium salts that do not form scum.",
+    "marking_scheme": [
+      "1 mark for the correct option (c)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Carbon and its Compounds",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "CA-AR-002"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Chains, branches and rings; homologous series; nomenclature of carbon compounds",
+    "qtype": "vsa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "What is a homologous series? Give two of its characteristics.",
+    "answer": "A series of carbon compounds with the same functional group and similar chemical properties, in which successive members differ by a –CH₂– unit. Characteristics (any two): same general formula; successive members differ by 14 u; similar chemical properties; gradual change in physical properties such as boiling point.",
+    "marking_scheme": [
+      "1 mark: definition.",
+      "1 mark: any two characteristics."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-VSA-001"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Ethanol and ethanoic acid: properties and reactions",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "An organic compound A with the formula C₂H₄O₂ turns blue litmus red and gives brisk effervescence with sodium hydrogencarbonate.\n(a) Identify A.\n(b) Write the equation for its reaction with sodium hydrogencarbonate.\n(c) What is formed when A is warmed with ethanol in the presence of a few drops of concentrated sulphuric acid?",
+    "answer": "(a) Ethanoic acid (acetic acid), CH₃COOH.\n(b) CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂.\n(c) A sweet-smelling ester, ethyl ethanoate (CH₃COOC₂H₅), and water – esterification.",
+    "marking_scheme": [
+      "1 mark: identification.",
+      "1 mark: equation.",
+      "1 mark: ester named."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-SA-001"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Soaps and detergents",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "How does soap remove oily dirt from clothes? Explain with the role of the two ends of a soap molecule.",
+    "answer": "A soap molecule has a long hydrocarbon tail that dissolves in oil (hydrophobic) and an ionic head that dissolves in water (hydrophilic). In water the tails stick into the oily dirt and the heads face the water, forming clusters called micelles with the dirt trapped inside. Rinsing washes the micelles away, removing the dirt.",
+    "marking_scheme": [
+      "1 mark: hydrophobic tail and hydrophilic head.",
+      "1 mark: micelle formation.",
+      "1 mark: dirt washed away."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-SA-002"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Chemical properties: combustion, oxidation, addition and substitution reactions",
+    "qtype": "case_based",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nLPG used in homes is mainly butane (C₄H₁₀). CNG used in buses is mainly methane (CH₄). Both burn with a clean blue flame when enough air is available.\nA. Name the homologous series to which butane and methane belong. (1)\nB. Why does a yellow, sooty flame mean that fuel is being wasted? (1)\nAttempt either sub-part C or D.\nC. Write the balanced equation for the complete combustion of methane. Why is this called an oxidation reaction? (2)\nOR\nD. Describe the type of bonding in methane in terms of shared electron pairs. Why does methane not conduct electricity? (2)",
+    "answer": "A. Alkanes.\nB. A yellow flame shows incomplete combustion: part of the carbon is left unburnt as soot, so less heat is obtained.\nC. CH₄ + 2O₂ → CO₂ + 2H₂O + heat and light. Carbon and hydrogen combine with oxygen, so it is oxidation.\nD. Carbon shares one pair of electrons with each of four hydrogen atoms – four single covalent bonds. There are no ions or free electrons, so methane does not conduct electricity.",
+    "marking_scheme": [
+      "1 mark: alkanes.",
+      "1 mark: incomplete combustion.",
+      "C – 1 mark: balanced equation; 1 mark: reason.",
+      "D – 1 mark: four shared pairs; 1 mark: no ions/free electrons."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-CB-001"
+  },
+  {
+    "chapter_id": "carbon_compounds",
+    "topic": "Versatile nature of carbon: catenation and tetravalency; saturated and unsaturated compounds",
+    "qtype": "la",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) What are catenation and tetravalency? How do they explain the large number of carbon compounds? (2)\n(b) Distinguish between saturated and unsaturated hydrocarbons, giving one example of each. (2)\n(c) How can you tell from their flames which of two hydrocarbons is unsaturated? (1)",
+    "answer": "(a) Catenation: carbon can link with other carbon atoms to form long chains, branches and rings. Tetravalency: carbon has a valency of four, so it can bond with four other atoms. Together these give a huge variety of compounds.\n(b) Saturated hydrocarbons have only single bonds between carbon atoms, e.g. ethane C₂H₆. Unsaturated hydrocarbons have at least one double or triple bond, e.g. ethene C₂H₄.\n(c) Unsaturated hydrocarbons usually burn with a yellow, sooty flame; saturated ones give a clean blue flame.",
+    "marking_scheme": [
+      "1 mark: both terms defined.",
+      "1 mark: link to number of compounds.",
+      "1 mark: difference.",
+      "1 mark: one example of each.",
+      "1 mark: flame test."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "Carbon and its Compounds",
+    "id": "CA-LA-001"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Reflection of light; spherical mirrors and image formation",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "The image formed by a plane mirror is:",
+    "options": [
+      "virtual, erect and of the same size",
+      "real, inverted and of the same size",
+      "virtual, erect and enlarged",
+      "real, erect and diminished"
+    ],
+    "answer": "virtual, erect and of the same size",
+    "explanation": "A plane mirror always forms a virtual, erect, same-size image.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-MCQ-001"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Mirror formula and magnification; uses of spherical mirrors",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A dentist uses a small mirror to see an enlarged image of a tooth. The mirror is:",
+    "options": [
+      "concave",
+      "convex",
+      "plane",
+      "a glass slab"
+    ],
+    "answer": "concave",
+    "explanation": "A concave mirror gives an enlarged, erect image when the object is between P and F.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-MCQ-002"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Power of a lens",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "The power of a lens is −2.0 D. The lens is:",
+    "options": [
+      "concave, with focal length 50 cm",
+      "convex, with focal length 50 cm",
+      "concave, with focal length 2 cm",
+      "convex, with focal length 2 m"
+    ],
+    "answer": "concave, with focal length 50 cm",
+    "explanation": "f = 1/P = 1/(−2) m = −0.5 m = −50 cm; a negative focal length means concave.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-MCQ-003"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Refraction of light; refraction through a glass slab; refractive index; Snell's law",
+    "qtype": "mcq",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "The refractive index of a glass is 1.5. If the speed of light in air is 3 × 10⁸ m/s, its speed in this glass is:",
+    "options": [
+      "2 × 10⁸ m/s",
+      "4.5 × 10⁸ m/s",
+      "1.5 × 10⁸ m/s",
+      "3 × 10⁸ m/s"
+    ],
+    "answer": "2 × 10⁸ m/s",
+    "explanation": "v = c/n = 3 × 10⁸ / 1.5 = 2 × 10⁸ m/s.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-MCQ-004"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Mirror formula and magnification; uses of spherical mirrors",
+    "qtype": "assertion_reason",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): Convex mirrors are used as rear-view mirrors in vehicles.\nReason (R): A convex mirror always forms an erect, diminished image and gives a wider field of view.",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "The wide field of view with an erect image is exactly why convex mirrors are used.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Light – Reflection and Refraction",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "LR-AR-001"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Mirror formula and magnification; uses of spherical mirrors",
+    "qtype": "vsa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "An object is placed 20 cm in front of a concave mirror of focal length 10 cm. Find the position of the image and state its nature.",
+    "answer": "u = −20 cm, f = −10 cm. 1/v = 1/f − 1/u = −1/10 + 1/20 = −1/20, so v = −20 cm.\nThe image is 20 cm in front of the mirror (at C): real, inverted and the same size as the object.",
+    "marking_scheme": [
+      "1 mark: correct use of mirror formula and v = −20 cm.",
+      "1 mark: nature of image."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-VSA-001"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Refraction of light; refraction through a glass slab; refractive index; Snell's law",
+    "qtype": "vsa",
+    "difficulty": "easy",
+    "competency_based": true,
+    "question": "A pencil partly dipped in a glass of water appears bent at the surface of the water. Why does this happen?",
+    "answer": "Light from the part under water bends away from the normal as it passes from water into air (refraction). The rays seem to come from a higher point, so the dipped part looks raised and the pencil looks bent.",
+    "marking_scheme": [
+      "1 mark: refraction named.",
+      "1 mark: light bends away from the normal / apparent position raised."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-VSA-002"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Spherical lenses and image formation; lens formula and magnification",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "A convex lens of focal length 15 cm forms a real image 30 cm from the lens. Find the object distance and the magnification. Describe the image.",
+    "answer": "Lens formula: 1/v − 1/u = 1/f. v = +30 cm, f = +15 cm. 1/u = 1/30 − 1/15 = −1/30, so u = −30 cm.\nm = v/u = 30/(−30) = −1. The image is real, inverted and of the same size.",
+    "marking_scheme": [
+      "1 mark: formula and substitution.",
+      "1 mark: u = −30 cm.",
+      "1 mark: m = −1 and nature."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-SA-001"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Spherical lenses and image formation; lens formula and magnification",
+    "qtype": "sa",
+    "difficulty": "easy",
+    "competency_based": true,
+    "question": "Where is the image formed when an object is placed between the focus (F) and the optical centre (O) of a convex lens? State its nature and size, and name one device that uses this.",
+    "answer": "The image is formed on the same side of the lens as the object. It is virtual, erect and enlarged. Used in a magnifying glass (simple microscope).",
+    "marking_scheme": [
+      "1 mark: position.",
+      "1 mark: nature and size.",
+      "1 mark: device."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-SA-002"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Mirror formula and magnification; uses of spherical mirrors",
+    "qtype": "case_based",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nIn a salon, Arjun looks into a special mirror and sees a large, upright image of his face, which helps him shave neatly. When he moves far away from the same mirror, his image becomes upside down.\nA. Which type of mirror is this? (1)\nB. Where should the face be placed to see an enlarged, erect image? (1)\nAttempt either sub-part C or D.\nC. The mirror has a focal length of 15 cm and Arjun's face is 10 cm from it. Find the image distance and the magnification. (2)\nOR\nD. The same type of mirror is used in torches and vehicle headlights. Explain how it helps there. (2)",
+    "answer": "A. Concave mirror.\nB. Between the pole (P) and the focus (F).\nC. u = −10 cm, f = −15 cm: 1/v = 1/f − 1/u = −1/15 + 1/10 = 1/30, so v = +30 cm (behind the mirror). m = −v/u = −30/(−10) = +3 – virtual, erect and three times larger.\nD. The bulb is placed at the focus of the concave mirror, so the reflected rays travel as a strong parallel beam.",
+    "marking_scheme": [
+      "1 mark: concave.",
+      "1 mark: between P and F.",
+      "C – 1 mark: v = +30 cm; 1 mark: m = +3.",
+      "D – 1 mark: bulb at focus; 1 mark: parallel beam."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-CB-001"
+  },
+  {
+    "chapter_id": "light_reflection_refraction",
+    "topic": "Refraction of light; refraction through a glass slab; refractive index; Snell's law",
+    "qtype": "la",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) What is meant by the absolute refractive index of a medium? What does 'refractive index of water is 1.33' mean? (2)\n(b) A ray of light passes obliquely through a rectangular glass slab. Describe its path. Why is the emergent ray parallel to the incident ray? (2)\n(c) The refractive index of diamond is 2.42. Find the speed of light in diamond. (c = 3 × 10⁸ m/s) (1)",
+    "answer": "(a) The ratio of the speed of light in vacuum (air) to the speed of light in the medium. It means light travels 1.33 times faster in air than in water.\n(b) At the first surface the ray bends towards the normal (air to glass); at the second surface it bends away from the normal (glass to air). The bending at the two parallel faces is equal and opposite, so the emergent ray is parallel to the incident ray but shifted sideways (lateral displacement).\n(c) v = c/n = 3 × 10⁸ / 2.42 ≈ 1.24 × 10⁸ m/s.",
+    "marking_scheme": [
+      "1 mark: definition.",
+      "1 mark: meaning of 1.33.",
+      "1 mark: path at both surfaces.",
+      "1 mark: reason for parallel emergence.",
+      "1 mark: correct speed with unit."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "Light – Reflection and Refraction",
+    "id": "LR-LA-001"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "The human eye; power of accommodation; near and far point",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Which part of the eye controls the amount of light entering it?",
+    "options": [
+      "Iris",
+      "Retina",
+      "Cornea",
+      "Optic nerve"
+    ],
+    "answer": "Iris",
+    "explanation": "The iris changes the size of the pupil.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-MCQ-001"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Defects of vision and their correction: myopia, hypermetropia, presbyopia",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Which defect of vision is corrected using a concave lens?",
+    "options": [
+      "Myopia",
+      "Hypermetropia",
+      "Presbyopia",
+      "Cataract"
+    ],
+    "answer": "Myopia",
+    "explanation": "A concave lens of suitable power corrects near-sightedness.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:46+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-MCQ-002"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Scattering of light: Tyndall effect, why the sky is blue, colour of the sun at sunrise and sunset",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "The clear sky looks blue because:",
+    "options": [
+      "blue light, having a shorter wavelength, is scattered more by air molecules",
+      "the oceans reflect blue light onto the sky",
+      "blue light is absorbed by the atmosphere",
+      "red light is scattered more than blue light"
+    ],
+    "answer": "blue light, having a shorter wavelength, is scattered more by air molecules",
+    "explanation": "Fine particles in air scatter shorter wavelengths (blue) much more strongly.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-MCQ-003"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Atmospheric refraction",
+    "qtype": "assertion_reason",
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "Assertion (A): Stars twinkle but planets do not.\nReason (R): Planets are much closer to the Earth and act as extended sources, so the changes in light from different points cancel out.",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "Twinkling is due to atmospheric refraction of light from a point source; planets are extended sources.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "The Human Eye and the Colourful World",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "HE-AR-001"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Defects of vision and their correction: myopia, hypermetropia, presbyopia",
+    "qtype": "vsa",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Neha cannot read the blackboard clearly from the last bench, but she reads her book without any difficulty. Name her defect of vision and give two possible causes.",
+    "answer": "Myopia (near-sightedness). Causes: excessive curvature of the eye lens, or elongation of the eyeball.",
+    "marking_scheme": [
+      "1 mark: myopia.",
+      "1 mark: both causes."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-VSA-001"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Scattering of light: Tyndall effect, why the sky is blue, colour of the sun at sunrise and sunset",
+    "qtype": "vsa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Why does the Sun appear reddish at sunrise and sunset?",
+    "answer": "Near the horizon, sunlight travels a much longer path through the atmosphere. Most of the blue light is scattered away on the way, and mainly the longer-wavelength red light reaches our eyes.",
+    "marking_scheme": [
+      "1 mark: longer path through atmosphere.",
+      "1 mark: blue scattered away, red reaches the eye."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-VSA-002"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Refraction of light through a glass prism; dispersion of white light",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Explain how a rainbow is formed after a shower of rain.",
+    "answer": "Tiny water droplets in the air act like small prisms. Sunlight entering a droplet is refracted and dispersed into its colours, then reflected inside the droplet, and refracted again as it comes out. The colours reach the observer at slightly different angles, forming a rainbow on the side opposite the Sun.",
+    "marking_scheme": [
+      "1 mark: refraction and dispersion.",
+      "1 mark: internal reflection.",
+      "1 mark: refraction on leaving / opposite the Sun."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-SA-001"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Refraction of light through a glass prism; dispersion of white light",
+    "qtype": "sa",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) What is dispersion of light?\n(b) Why does white light split into colours when it passes through a glass prism?\n(c) Why do we not see colours when white light passes through a rectangular glass slab?",
+    "answer": "(a) The splitting of white light into its component colours.\n(b) Different colours bend through different angles in glass (red least, violet most), so they separate.\n(c) In a slab the two refracting faces are parallel: the colours separated at the first face come together again at the second face and emerge parallel, so no spectrum is seen.",
+    "marking_scheme": [
+      "1 mark each for (a), (b) and (c)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-SA-002"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "Defects of vision and their correction: myopia, hypermetropia, presbyopia",
+    "qtype": "case_based",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nSixty-year-old Mr Sharma can see the road clearly while driving but holds the newspaper far away to read it. His optometrist suggests bifocal lenses.\nA. Name this defect of vision. (1)\nB. What causes it? (1)\nAttempt either sub-part C or D.\nC. What are bifocal lenses? How do they help Mr Sharma? (2)\nOR\nD. What is the power of accommodation of the eye? What happens to it with age? (2)",
+    "answer": "A. Presbyopia.\nB. With age the ciliary muscles weaken and the eye lens loses its flexibility.\nC. Bifocal lenses have two parts: the upper part is a concave lens for seeing distant objects, the lower part is a convex lens for reading. He can see both near and far through the same spectacles.\nD. The ability of the eye lens to adjust its focal length to see both near and distant objects clearly. It decreases with age.",
+    "marking_scheme": [
+      "1 mark: presbyopia.",
+      "1 mark: cause.",
+      "C – 1 mark: two parts named; 1 mark: how they help.",
+      "D – 1 mark: definition; 1 mark: decreases with age."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-CB-001"
+  },
+  {
+    "chapter_id": "human_eye",
+    "topic": "The human eye; power of accommodation; near and far point",
+    "qtype": "la",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "(a) State the function of each of the following parts of the human eye: cornea, iris, eye lens and retina. (2)\n(b) What is hypermetropia? Give two causes and explain how it is corrected. (2)\n(c) Why can't we see clearly for a short while when we walk into a dark room from bright sunlight? (1)",
+    "answer": "(a) Cornea: most of the refraction of light entering the eye. Iris: controls the size of the pupil. Eye lens: fine adjustment of focal length to focus images on the retina. Retina: light-sensitive screen that sends signals to the brain.\n(b) Hypermetropia (far-sightedness): a person sees distant objects clearly but not nearby ones. Causes: focal length of the eye lens too long, or eyeball too short. Corrected with a convex lens of suitable power.\n(c) The pupil takes some time to open wider to let in more light.",
+    "marking_scheme": [
+      "2 marks: half mark for each part.",
+      "1 mark: meaning and causes.",
+      "1 mark: convex lens correction.",
+      "1 mark: pupil adjustment."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "The Human Eye and the Colourful World",
+    "id": "HE-LA-001"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Ohm's law; factors on which resistance depends; resistivity",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "The SI unit of resistivity is:",
+    "options": [
+      "ohm metre (Ω m)",
+      "ohm (Ω)",
+      "ohm per metre (Ω/m)",
+      "volt per ampere (V/A)"
+    ],
+    "answer": "ohm metre (Ω m)",
+    "explanation": "ρ = RA/L, so its unit is Ω m²/m = Ω m.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Electricity",
+    "id": "EL-MCQ-001"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Resistors in series and in parallel",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Three resistors of 6 Ω each are connected in parallel. Their equivalent resistance is:",
+    "options": [
+      "2 Ω",
+      "18 Ω",
+      "3 Ω",
+      "6 Ω"
+    ],
+    "answer": "2 Ω",
+    "explanation": "1/R = 1/6 + 1/6 + 1/6 = 1/2, so R = 2 Ω.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Electricity",
+    "id": "EL-MCQ-002"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Electric power",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "A 1500 W heater is used for 2 hours every day for 30 days. The electrical energy used is:",
+    "options": [
+      "90 kWh",
+      "9 kWh",
+      "45 kWh",
+      "3000 kWh"
+    ],
+    "answer": "90 kWh",
+    "explanation": "E = 1.5 kW × 2 h × 30 = 90 kWh (90 units).",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Electricity",
+    "id": "EL-MCQ-003"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Ohm's law; factors on which resistance depends; resistivity",
+    "qtype": "mcq",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "The length of a wire is doubled and its area of cross-section is halved. Its resistance becomes:",
+    "options": [
+      "four times",
+      "twice",
+      "half",
+      "unchanged"
+    ],
+    "answer": "four times",
+    "explanation": "R ∝ L/A, so R becomes (2/0.5) = 4 times.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Electricity",
+    "id": "EL-MCQ-004"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Heating effect of electric current: Joule's law and applications",
+    "qtype": "assertion_reason",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): Tungsten is used to make the filament of electric bulbs.\nReason (R): Tungsten has a very high melting point (about 3380 °C).",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "The filament must glow white-hot without melting.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Electricity",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "EL-AR-001"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Resistors in series and in parallel",
+    "qtype": "vsa",
+    "difficulty": "easy",
+    "competency_based": true,
+    "question": "Why are household appliances connected in parallel and not in series? Give two reasons.",
+    "answer": "Each appliance gets the full mains voltage; each can be switched on or off independently; if one fails the others keep working; each draws the current it needs (any two).",
+    "marking_scheme": [
+      "1 mark each for two correct reasons."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Electricity",
+    "id": "EL-VSA-001"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Electric current and circuit; electric potential and potential difference; circuit diagrams",
+    "qtype": "vsa",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "A charge of 300 C flows through a bulb in 5 minutes. Find the current through the bulb.",
+    "answer": "I = Q/t = 300 C / (5 × 60 s) = 300/300 = 1 A.",
+    "marking_scheme": [
+      "1 mark: formula with time in seconds.",
+      "1 mark: 1 A."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Electricity",
+    "id": "EL-VSA-002"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Ohm's law; factors on which resistance depends; resistivity",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "State Ohm's law. In an experiment a student records a potential difference of 2 V when the current is 0.5 A, and 4 V when the current is 1.0 A. Find the resistance of the wire and the current at 6 V.",
+    "answer": "Ohm's law: at constant temperature, the current through a conductor is directly proportional to the potential difference across its ends (V = IR).\nR = V/I = 2/0.5 = 4 Ω (also 4/1.0 = 4 Ω).\nAt 6 V: I = V/R = 6/4 = 1.5 A.",
+    "marking_scheme": [
+      "1 mark: statement.",
+      "1 mark: R = 4 Ω.",
+      "1 mark: I = 1.5 A."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Electricity",
+    "id": "EL-SA-001"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Resistors in series and in parallel",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Resistors of 4 Ω and 12 Ω are connected to a 12 V battery, (a) in series and (b) in parallel. Find the total current in each case.",
+    "answer": "(a) Series: R = 4 + 12 = 16 Ω; I = 12/16 = 0.75 A.\n(b) Parallel: 1/R = 1/4 + 1/12 = 4/12, so R = 3 Ω; I = 12/3 = 4 A.",
+    "marking_scheme": [
+      "1 mark: series resistance and current.",
+      "1 mark: parallel equivalent resistance.",
+      "1 mark: parallel current."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Electricity",
+    "id": "EL-SA-002"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Heating effect of electric current: Joule's law and applications",
+    "qtype": "case_based",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nAn electric iron is rated 1000 W, 220 V. Its heating element is made of nichrome, an alloy, and it gets hot enough to press cotton clothes.\nA. Find the current drawn by the iron. (1)\nB. On which effect of electric current does the iron work? (1)\nAttempt either sub-part C or D.\nC. Find the resistance of the heating element and the heat produced in 5 minutes. (2)\nOR\nD. Why is the heating element made of an alloy like nichrome rather than a pure metal like copper? (2)",
+    "answer": "A. I = P/V = 1000/220 ≈ 4.5 A.\nB. Heating effect of electric current (Joule heating).\nC. R = V²/P = 220 × 220 / 1000 = 48.4 Ω. Heat H = P × t = 1000 × 300 = 3 × 10⁵ J.\nD. Alloys have much higher resistivity than pure metals, so more heat is produced, and they do not oxidise (burn) readily at high temperatures.",
+    "marking_scheme": [
+      "1 mark: about 4.5 A.",
+      "1 mark: heating effect.",
+      "C – 1 mark: 48.4 Ω; 1 mark: 3 × 10⁵ J.",
+      "D – 1 mark: high resistivity; 1 mark: does not oxidise at high temperature."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "Electricity",
+    "id": "EL-CB-001"
+  },
+  {
+    "chapter_id": "electricity",
+    "topic": "Ohm's law; factors on which resistance depends; resistivity",
+    "qtype": "la",
+    "difficulty": "hard",
+    "competency_based": false,
+    "question": "(a) On which factors does the resistance of a conductor depend? Write the relation and explain resistivity. (2)\n(b) The resistivity of copper is 1.7 × 10⁻⁸ Ω m. Find the resistance of a copper wire 1 km long with an area of cross-section of 1 mm². (2)\n(c) Why are copper and aluminium used for electricity transmission wires? (1)",
+    "answer": "(a) R is directly proportional to length and inversely proportional to area of cross-section, and depends on the material and temperature: R = ρL/A. ρ (resistivity) is the resistance of a 1 m long conductor of 1 m² cross-section; it depends only on the material.\n(b) R = ρL/A = 1.7 × 10⁻⁸ × 1000 / (1 × 10⁻⁶) = 17 Ω.\n(c) They have low resistivity, so very little energy is lost as heat.",
+    "marking_scheme": [
+      "1 mark: factors with R = ρL/A.",
+      "1 mark: meaning of resistivity.",
+      "1 mark: correct substitution with units converted.",
+      "1 mark: 17 Ω.",
+      "1 mark: low resistivity."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "Electricity",
+    "id": "EL-LA-001"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Magnetic field and field lines",
+    "qtype": "mcq",
+    "difficulty": "easy",
+    "competency_based": false,
+    "question": "Outside a bar magnet, magnetic field lines:",
+    "options": [
+      "start at the north pole and end at the south pole",
+      "start at the south pole and end at the north pole",
+      "are straight and parallel",
+      "cross each other near the poles"
+    ],
+    "answer": "start at the north pole and end at the south pole",
+    "explanation": "Outside the magnet, field lines go from N to S.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-MCQ-001"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Magnetic field due to a current-carrying conductor: straight wire (right-hand thumb rule), circular loop, solenoid",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "The magnetic field inside a long straight current-carrying solenoid is:",
+    "options": [
+      "uniform",
+      "zero",
+      "strongest at the ends",
+      "circular"
+    ],
+    "answer": "uniform",
+    "explanation": "Field lines inside a long solenoid are parallel straight lines.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-MCQ-002"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Domestic electric circuits",
+    "qtype": "mcq",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "In a domestic circuit, a fuse is connected:",
+    "options": [
+      "in series with the live wire",
+      "in parallel with the neutral wire",
+      "with the earth wire",
+      "in parallel with each appliance"
+    ],
+    "answer": "in series with the live wire",
+    "explanation": "The fuse must break the live wire to cut off the supply when the current is too high.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-MCQ-003"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Magnetic field and field lines",
+    "qtype": "assertion_reason",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Assertion (A): Two magnetic field lines never intersect each other.\nReason (R): If they did, a compass needle at that point would point in two directions at once, which is not possible.",
+    "answer": "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+    "explanation": "The field has a single direction at any point.",
+    "marking_scheme": [
+      "1 mark for the correct option (a)."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 1,
+    "chapter": "Magnetic Effects of Electric Current",
+    "options": [
+      "Both Assertion (A) and Reason (R) are true, and R is the correct explanation of A.",
+      "Both Assertion (A) and Reason (R) are true, but R is not the correct explanation of A.",
+      "Assertion (A) is true, but Reason (R) is false.",
+      "Assertion (A) is false, but Reason (R) is true."
+    ],
+    "id": "ME-AR-001"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Force on a current-carrying conductor in a magnetic field: Fleming's left-hand rule",
+    "qtype": "vsa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "State Fleming's left-hand rule.",
+    "answer": "Stretch the thumb, forefinger and middle finger of the left hand mutually perpendicular. If the forefinger points in the direction of the magnetic field and the middle finger in the direction of the current, the thumb gives the direction of the force (motion) on the conductor.",
+    "marking_scheme": [
+      "1 mark: arrangement of fingers.",
+      "1 mark: what each finger shows."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-VSA-001"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Domestic electric circuits",
+    "qtype": "vsa",
+    "difficulty": "easy",
+    "competency_based": true,
+    "question": "What is the function of the earth wire? Why should metal-bodied appliances be earthed?",
+    "answer": "The earth wire provides a low-resistance path for leaked current to flow to the earth. If the live wire touches the metal body, the current flows to the earth instead of through the user, preventing a severe electric shock.",
+    "marking_scheme": [
+      "1 mark: low-resistance path to earth.",
+      "1 mark: protects the user from shock."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 2,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-VSA-002"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Magnetic field due to a current-carrying conductor: straight wire (right-hand thumb rule), circular loop, solenoid",
+    "qtype": "sa",
+    "difficulty": "medium",
+    "competency_based": false,
+    "question": "Describe the pattern of magnetic field lines due to a current-carrying circular loop. How does the field at the centre change if (a) the current is increased, (b) the number of turns is increased?",
+    "answer": "Near the wire the lines are concentric circles; towards the centre the circles become larger, and at the centre the lines are almost straight. (a) The field becomes stronger. (b) The field becomes stronger (it adds up for each turn).",
+    "marking_scheme": [
+      "1 mark: pattern.",
+      "1 mark: effect of current.",
+      "1 mark: effect of number of turns."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-SA-001"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Domestic electric circuits",
+    "qtype": "sa",
+    "difficulty": "easy",
+    "competency_based": true,
+    "question": "What are short-circuiting and overloading? How does a fuse protect a circuit?",
+    "answer": "Short-circuiting: the live and neutral wires come in direct contact, so the current rises sharply. Overloading: too many appliances are connected to one socket or the supply voltage rises, drawing too much current. A fuse wire melts when the current exceeds a safe value and breaks the circuit, protecting the wiring and appliances.",
+    "marking_scheme": [
+      "1 mark: short circuit.",
+      "1 mark: overloading.",
+      "1 mark: working of fuse."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 3,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-SA-002"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Domestic electric circuits",
+    "qtype": "case_based",
+    "difficulty": "medium",
+    "competency_based": true,
+    "question": "Read the passage and answer the questions.\nSunita's house has a 5 A circuit for lights and fans and a separate 15 A circuit for heavy appliances. One winter evening the 15 A circuit switched off by itself when a 2000 W room heater, a 1500 W geyser and a 1000 W iron were used together on 220 V.\nA. Why are heavy appliances given a separate 15 A circuit? (1)\nB. What is the job of the device that switched the circuit off? (1)\nAttempt either sub-part C or D.\nC. Find the total current drawn by the three appliances and explain why the circuit switched off. (2)\nOR\nD. Name the colours used for the live, neutral and earth wires and say where the earth wire is connected in an appliance. (2)",
+    "answer": "A. They draw large currents, which the 5 A circuit cannot carry safely.\nB. A fuse / MCB cuts off the supply when the current exceeds the safe limit.\nC. Total power = 4500 W; I = P/V = 4500/220 ≈ 20.5 A, which is more than 15 A – overloading, so the fuse/MCB cut off the circuit.\nD. Live: red (or brown); neutral: black (or blue); earth: green (or green-yellow). The earth wire is connected to the metal body of the appliance.",
+    "marking_scheme": [
+      "1 mark: large current.",
+      "1 mark: cuts off excess current.",
+      "C – 1 mark: about 20.5 A; 1 mark: overloading explained.",
+      "D – 1 mark: three colours; 1 mark: earth wire to metal body."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:47+00:00",
+    "last_used_in_paper": null,
+    "marks": 4,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-CB-001"
+  },
+  {
+    "chapter_id": "magnetic_effects",
+    "topic": "Force on a current-carrying conductor in a magnetic field: Fleming's left-hand rule",
+    "qtype": "la",
+    "difficulty": "hard",
+    "competency_based": true,
+    "question": "(a) A small aluminium rod is hung between the poles of a horseshoe magnet. When a current is passed through the rod, it moves. Explain why. (2)\n(b) Name and state the rule used to find the direction of its movement. (2)\n(c) What happens if the direction of the current is reversed? (1)",
+    "answer": "(a) A current-carrying conductor produces its own magnetic field. This interacts with the field of the magnet, so a force acts on the rod and it moves. The force is greatest when the current is perpendicular to the field.\n(b) Fleming's left-hand rule: with the thumb, forefinger and middle finger of the left hand at right angles, the forefinger shows the field, the middle finger the current and the thumb the direction of force.\n(c) The rod moves in the opposite direction.",
+    "marking_scheme": [
+      "1 mark: field of current interacts with magnet's field.",
+      "1 mark: force acts on rod.",
+      "1 mark: rule named.",
+      "1 mark: rule stated correctly.",
+      "1 mark: opposite direction."
+    ],
+    "status": "pending",
+    "source": "ai",
+    "created_at": "2026-10-26T04:35:48+00:00",
+    "last_used_in_paper": null,
+    "marks": 5,
+    "chapter": "Magnetic Effects of Electric Current",
+    "id": "ME-LA-001"
   }
 ]
